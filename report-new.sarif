@@ -14,7 +14,7 @@
                   "id": "CVE-2021-42771",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2021-42771",
+                    "text": "CVE-2021-42771"
                   },
                   "fullDescription": {
                     "text": "CVE-2021-20095 CVE-2021-42771 python-babel: Relative path traversal allows attacker to load arbitrary locale files and execute arbitrary code."
@@ -35,7 +35,7 @@
                   "id": "CVE-2019-19844",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2019-19844",
+                    "text": "CVE-2019-19844"
                   },
                   "fullDescription": {
                     "text": "Django: crafted email address allows account takeover."
@@ -56,7 +56,7 @@
                   "id": "CVE-2020-7471",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-7471",
+                    "text": "CVE-2020-7471"
                   },
                   "fullDescription": {
                     "text": "django: potential SQL injection via StringAgg(delimiter)."
@@ -77,7 +77,7 @@
                   "id": "CVE-2019-6975",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2019-6975",
+                    "text": "CVE-2019-6975"
                   },
                   "fullDescription": {
                     "text": "python-django: memory exhaustion in django.utils.numberformat.format()."
@@ -98,7 +98,7 @@
                   "id": "CVE-2020-9402",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-9402",
+                    "text": "CVE-2020-9402"
                   },
                   "fullDescription": {
                     "text": "django: potential SQL injection via &#34;tolerance&#34; parameter in GIS functions and aggregates on Oracle."
@@ -119,7 +119,7 @@
                   "id": "CVE-2019-3498",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2019-3498",
+                    "text": "CVE-2019-3498"
                   },
                   "fullDescription": {
                     "text": "python-django: Content spoofing via URL path in default 404 page."
@@ -140,7 +140,7 @@
                   "id": "CVE-2020-13254",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-13254",
+                    "text": "CVE-2020-13254"
                   },
                   "fullDescription": {
                     "text": "django: potential data leakage via malformed memcached keys."
@@ -161,7 +161,7 @@
                   "id": "CVE-2020-13596",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-13596",
+                    "text": "CVE-2020-13596"
                   },
                   "fullDescription": {
                     "text": "django: possible XSS via admin ForeignKeyRawIdWidget."
@@ -182,7 +182,7 @@
                   "id": "CVE-2021-33203",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2021-33203",
+                    "text": "CVE-2021-33203"
                   },
                   "fullDescription": {
                     "text": "django: Potential directory traversal via ``admindocs``."
@@ -203,7 +203,7 @@
                   "id": "pyup.io-37132",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "pyup.io-37132",
+                    "text": "pyup.io-37132"
                   },
                   "fullDescription": {
                     "text": "In django-cors-headers version 3.0.0, ``CORS_ORIGIN_WHITELIST`` requires URI schemes, and optionally ports. This is part of the CORS specification (Section 3.2 &lt;https://tools.ietf.org/html/rfc6454section-3.2&gt;) that was not implemented in this library, except from with the ``CORS_ORIGIN_REGEX_WHITELIST`` setting. It fixes a security issue where the CORS middleware would allow requests between schemes, for example from insecure ``http://`` Origins to a secure ``https://`` site.\r\n\r\nYou will need to update your whitelist to include schemes, for example from this:\r\n\r\nCORS_ORIGIN_WHITELIST = [&#39;example.com&#39;]\r\n\r\nto this:\r\n\r\nCORS_ORIGIN_WHITELIST = [&#39;https://example.com&#39;]."
@@ -223,7 +223,7 @@
                   "id": "pyup.io-42216",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "pyup.io-42216",
+                    "text": "pyup.io-42216"
                   },
                   "fullDescription": {
                     "text": "Django-silk version 4.0.0 masks request headers to avoid auth information leaking.\r\nhttps://github.com/jazzband/django-silk/issues/375."
@@ -243,7 +243,7 @@
                   "id": "CVE-2020-25626",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-25626",
+                    "text": "CVE-2020-25626"
                   },
                   "fullDescription": {
                     "text": "django-rest-framework: XSS Vulnerability in API viewer."
@@ -264,7 +264,7 @@
                   "id": "pyup.io-40104",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "pyup.io-40104",
+                    "text": "pyup.io-40104"
                   },
                   "fullDescription": {
                     "text": "Gunicorn 20.0.1 fixes chunked encoding support to prevent any request smuggling for security purposes."
@@ -284,7 +284,7 @@
                   "id": "pyup.io-40105",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "pyup.io-40105",
+                    "text": "pyup.io-40105"
                   },
                   "fullDescription": {
                     "text": "Gunicorn 19.10.0 includes a security fix to prevent HTTP desync attack."
@@ -304,7 +304,7 @@
                   "id": "CVE-2021-21240",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2021-21240",
+                    "text": "CVE-2021-21240"
                   },
                   "fullDescription": {
                     "text": "python-httplib2: Regular expression denial of service via malicious header."
@@ -325,7 +325,7 @@
                   "id": "CVE-2020-11078",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-11078",
+                    "text": "CVE-2020-11078"
                   },
                   "fullDescription": {
                     "text": "python-httplib2: CRLF injection via an attacker controlled unescaped part of uri for httplib2.Http.request function."
@@ -346,7 +346,7 @@
                   "id": "pyup.io-38303",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "pyup.io-38303",
+                    "text": "pyup.io-38303"
                   },
                   "fullDescription": {
                     "text": "Httplib2 0.18.0 is an important security update to patch a CWE-93 CRLF injection vulnerability which forces %xx quote of space, CR, LF characters in uri. See: &lt;https://cwe.mitre.org/data/definitions/93.html&gt;."
@@ -366,7 +366,7 @@
                   "id": "CVE-2020-28493",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-28493",
+                    "text": "CVE-2020-28493"
                   },
                   "fullDescription": {
                     "text": "python-jinja2: ReDoS vulnerability in the urlize filter."
@@ -387,7 +387,7 @@
                   "id": "CVE-2020-29651",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-29651",
+                    "text": "CVE-2020-29651"
                   },
                   "fullDescription": {
                     "text": "python-py: ReDoS in the py.path.svnwc component via mailicious input to blame functionality."
@@ -408,7 +408,7 @@
                   "id": "CVE-2021-20270",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2021-20270",
+                    "text": "CVE-2021-20270"
                   },
                   "fullDescription": {
                     "text": "python-pygments: Infinite loop in SML lexer may lead to DoS."
@@ -429,7 +429,7 @@
                   "id": "CVE-2021-27291",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2021-27291",
+                    "text": "CVE-2021-27291"
                   },
                   "fullDescription": {
                     "text": "python-pygments: ReDoS in multiple lexers."
@@ -450,7 +450,7 @@
                   "id": "CVE-2019-20477",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2019-20477",
+                    "text": "CVE-2019-20477"
                   },
                   "fullDescription": {
                     "text": "PyYAML: command execution through python/object/apply constructor in FullLoader."
@@ -471,7 +471,7 @@
                   "id": "CVE-2020-14343",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-14343",
+                    "text": "CVE-2020-14343"
                   },
                   "fullDescription": {
                     "text": "PyYAML: incomplete fix for CVE-2020-1747."
@@ -492,7 +492,7 @@
                   "id": "CVE-2020-1747",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-1747",
+                    "text": "CVE-2020-1747"
                   },
                   "fullDescription": {
                     "text": "PyYAML: arbitrary command execution through python/object/new when FullLoader is used."
@@ -513,7 +513,7 @@
                   "id": "CVE-2019-11324",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2019-11324",
+                    "text": "CVE-2019-11324"
                   },
                   "fullDescription": {
                     "text": "python-urllib3: Certification mishandle when error should be thrown."
@@ -534,7 +534,7 @@
                   "id": "CVE-2021-33503",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2021-33503",
+                    "text": "CVE-2021-33503"
                   },
                   "fullDescription": {
                     "text": "python-urllib3: ReDoS in the parsing of authority part of URL."
@@ -555,7 +555,7 @@
                   "id": "CVE-2019-11236",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2019-11236",
+                    "text": "CVE-2019-11236"
                   },
                   "fullDescription": {
                     "text": "python-urllib3: CRLF injection due to not encoding the &#39;\\r\\n&#39; sequence leading to possible attack on internal service."
@@ -576,7 +576,7 @@
                   "id": "CVE-2020-26137",
                   "name": "Programming Language Vulnerability",
                   "shortDescription": {
-                    "text": "CVE-2020-26137",
+                    "text": "CVE-2020-26137"
                   },
                   "fullDescription": {
                     "text": "python-urllib3: CRLF injection via HTTP request method."
