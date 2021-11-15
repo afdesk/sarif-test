@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - andrl
   pull_request:
 jobs:
   build:
