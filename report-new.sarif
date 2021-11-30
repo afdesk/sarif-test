@@ -24,7 +24,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2021-42771",
                   "help": {
-                    "text": "Babel.Locale in Babel before 2.9.1 allows attackers to load arbitrary locale .dat files (containing serialized Python objects) via directory traversal, leading to code execution."
+                    "text": "Babel.Locale in Babel before 2.9.1 allows attackers to load arbitrary locale .dat files (containing serialized Python objects) via directory traversal, leading to code execution.",
+                    "markdown": "**Vulnerability CVE-2021-42771**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|babel|2.9.1|[CVE-2021-42771](https://avd.aquasec.com/nvd/cve-2021-42771)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -48,7 +49,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2019-19844",
                   "help": {
-                    "text": "Django before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user&#39;s email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.)."
+                    "text": "Django before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user&#39;s email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.).",
+                    "markdown": "**Vulnerability CVE-2019-19844**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|django|3.0.1, 2.2.9, 1.11.27|[CVE-2019-19844](https://avd.aquasec.com/nvd/cve-2019-19844)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -72,7 +74,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-7471",
                   "help": {
-                    "text": "Django 1.11 before 1.11.28, 2.2 before 2.2.10, and 3.0 before 3.0.3 allows SQL Injection if untrusted data is used as a StringAgg delimiter (e.g., in Django applications that offer downloads of data as a series of rows with a user-specified column delimiter). By passing a suitably crafted delimiter to a contrib.postgres.aggregates.StringAgg instance, it was possible to break escaping and inject malicious SQL."
+                    "text": "Django 1.11 before 1.11.28, 2.2 before 2.2.10, and 3.0 before 3.0.3 allows SQL Injection if untrusted data is used as a StringAgg delimiter (e.g., in Django applications that offer downloads of data as a series of rows with a user-specified column delimiter). By passing a suitably crafted delimiter to a contrib.postgres.aggregates.StringAgg instance, it was possible to break escaping and inject malicious SQL.",
+                    "markdown": "**Vulnerability CVE-2020-7471**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|django|3.0.3, 2.2.10, 1.11.28|[CVE-2020-7471](https://avd.aquasec.com/nvd/cve-2020-7471)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -96,7 +99,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2019-6975",
                   "help": {
-                    "text": "Django 1.11.x before 1.11.19, 2.0.x before 2.0.11, and 2.1.x before 2.1.6 allows Uncontrolled Memory Consumption via a malicious attacker-supplied value to the django.utils.numberformat.format() function."
+                    "text": "Django 1.11.x before 1.11.19, 2.0.x before 2.0.11, and 2.1.x before 2.1.6 allows Uncontrolled Memory Consumption via a malicious attacker-supplied value to the django.utils.numberformat.format() function.",
+                    "markdown": "**Vulnerability CVE-2019-6975**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|django|2.0.11|[CVE-2019-6975](https://avd.aquasec.com/nvd/cve-2019-6975)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -120,7 +124,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-9402",
                   "help": {
-                    "text": "Django 1.11 before 1.11.29, 2.2 before 2.2.11, and 3.0 before 3.0.4 allows SQL Injection if untrusted data is used as a tolerance parameter in GIS functions and aggregates on Oracle. By passing a suitably crafted tolerance to GIS functions and aggregates on Oracle, it was possible to break escaping and inject malicious SQL."
+                    "text": "Django 1.11 before 1.11.29, 2.2 before 2.2.11, and 3.0 before 3.0.4 allows SQL Injection if untrusted data is used as a tolerance parameter in GIS functions and aggregates on Oracle. By passing a suitably crafted tolerance to GIS functions and aggregates on Oracle, it was possible to break escaping and inject malicious SQL.",
+                    "markdown": "**Vulnerability CVE-2020-9402**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|django|3.0.4, 2.2.11, 1.11.29|[CVE-2020-9402](https://avd.aquasec.com/nvd/cve-2020-9402)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -144,7 +149,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2019-3498",
                   "help": {
-                    "text": "In Django 1.11.x before 1.11.18, 2.0.x before 2.0.10, and 2.1.x before 2.1.5, an Improper Neutralization of Special Elements in Output Used by a Downstream Component issue exists in django.views.defaults.page_not_found(), leading to content spoofing (in a 404 error page) if a user fails to recognize that a crafted URL has malicious content."
+                    "text": "In Django 1.11.x before 1.11.18, 2.0.x before 2.0.10, and 2.1.x before 2.1.5, an Improper Neutralization of Special Elements in Output Used by a Downstream Component issue exists in django.views.defaults.page_not_found(), leading to content spoofing (in a 404 error page) if a user fails to recognize that a crafted URL has malicious content.",
+                    "markdown": "**Vulnerability CVE-2019-3498**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|django|2.1.5, 2.0.10, 1.11.18|[CVE-2019-3498](https://avd.aquasec.com/nvd/cve-2019-3498)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -168,7 +174,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-13254",
                   "help": {
-                    "text": "An issue was discovered in Django 2.2 before 2.2.13 and 3.0 before 3.0.7. In cases where a memcached backend does not perform key validation, passing malformed cache keys could result in a key collision, and potential data leakage."
+                    "text": "An issue was discovered in Django 2.2 before 2.2.13 and 3.0 before 3.0.7. In cases where a memcached backend does not perform key validation, passing malformed cache keys could result in a key collision, and potential data leakage.",
+                    "markdown": "**Vulnerability CVE-2020-13254**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|django|3.0.7, 2.2.13|[CVE-2020-13254](https://avd.aquasec.com/nvd/cve-2020-13254)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -192,7 +199,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-13596",
                   "help": {
-                    "text": "An issue was discovered in Django 2.2 before 2.2.13 and 3.0 before 3.0.7. Query parameters generated by the Django admin ForeignKeyRawIdWidget were not properly URL encoded, leading to a possibility of an XSS attack."
+                    "text": "An issue was discovered in Django 2.2 before 2.2.13 and 3.0 before 3.0.7. Query parameters generated by the Django admin ForeignKeyRawIdWidget were not properly URL encoded, leading to a possibility of an XSS attack.",
+                    "markdown": "**Vulnerability CVE-2020-13596**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|django|3.0.7, 2.2.13|[CVE-2020-13596](https://avd.aquasec.com/nvd/cve-2020-13596)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -216,7 +224,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2021-33203",
                   "help": {
-                    "text": "Django before 2.2.24, 3.x before 3.1.12, and 3.2.x before 3.2.4 has a potential directory traversal via django.contrib.admindocs. Staff members could use the TemplateDetailView view to check the existence of arbitrary files. Additionally, if (and only if) the default admindocs templates have been customized by application developers to also show file contents, then not only the existence but also the file contents would have been exposed. In other words, there is directory traversal outside of the template root directories."
+                    "text": "Django before 2.2.24, 3.x before 3.1.12, and 3.2.x before 3.2.4 has a potential directory traversal via django.contrib.admindocs. Staff members could use the TemplateDetailView view to check the existence of arbitrary files. Additionally, if (and only if) the default admindocs templates have been customized by application developers to also show file contents, then not only the existence but also the file contents would have been exposed. In other words, there is directory traversal outside of the template root directories.",
+                    "markdown": "**Vulnerability CVE-2021-33203**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|django|2.2.24, 3.1.12, 3.2.4|[CVE-2021-33203](https://avd.aquasec.com/nvd/cve-2021-33203)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -239,7 +248,8 @@
                     "level": "note"
                   },
                   "help": {
-                    "text": "."
+                    "text": ".",
+                    "markdown": "**Vulnerability pyup.io-37132**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|django-cors-headers|3.0.0|[pyup.io-37132]()|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -262,7 +272,8 @@
                     "level": "note"
                   },
                   "help": {
-                    "text": "."
+                    "text": ".",
+                    "markdown": "**Vulnerability pyup.io-42216**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|django-silk|4.0.0|[pyup.io-42216]()|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -286,7 +297,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-25626",
                   "help": {
-                    "text": "A flaw was found in Django REST Framework versions before 3.12.0 and before 3.11.2. When using the browseable API viewer, Django REST Framework fails to properly escape certain strings that can come from user input. This allows a user who can control those strings to inject malicious &lt;script&gt; tags, leading to a cross-site-scripting (XSS) vulnerability."
+                    "text": "A flaw was found in Django REST Framework versions before 3.12.0 and before 3.11.2. When using the browseable API viewer, Django REST Framework fails to properly escape certain strings that can come from user input. This allows a user who can control those strings to inject malicious &lt;script&gt; tags, leading to a cross-site-scripting (XSS) vulnerability.",
+                    "markdown": "**Vulnerability CVE-2020-25626**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|djangorestframework|3.11.2|[CVE-2020-25626](https://avd.aquasec.com/nvd/cve-2020-25626)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -309,7 +321,8 @@
                     "level": "note"
                   },
                   "help": {
-                    "text": "."
+                    "text": ".",
+                    "markdown": "**Vulnerability pyup.io-40104**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|gunicorn|19.10.0, 20.0.1|[pyup.io-40104]()|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -332,7 +345,8 @@
                     "level": "note"
                   },
                   "help": {
-                    "text": "."
+                    "text": ".",
+                    "markdown": "**Vulnerability pyup.io-40105**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|gunicorn|19.10.0|[pyup.io-40105]()|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -356,7 +370,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2021-21240",
                   "help": {
-                    "text": "httplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of &#34;\\xa0&#34; characters in the &#34;www-authenticate&#34; header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library."
+                    "text": "httplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of &#34;\\xa0&#34; characters in the &#34;www-authenticate&#34; header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library.",
+                    "markdown": "**Vulnerability CVE-2021-21240**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|httplib2|0.19.0|[CVE-2021-21240](https://avd.aquasec.com/nvd/cve-2021-21240)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -380,7 +395,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-11078",
                   "help": {
-                    "text": "In httplib2 before version 0.18.0, an attacker controlling unescaped part of uri for `httplib2.Http.request()` could change request headers and body, send additional hidden requests to same server. This vulnerability impacts software that uses httplib2 with uri constructed by string concatenation, as opposed to proper urllib building with escaping. This has been fixed in 0.18.0."
+                    "text": "In httplib2 before version 0.18.0, an attacker controlling unescaped part of uri for `httplib2.Http.request()` could change request headers and body, send additional hidden requests to same server. This vulnerability impacts software that uses httplib2 with uri constructed by string concatenation, as opposed to proper urllib building with escaping. This has been fixed in 0.18.0.",
+                    "markdown": "**Vulnerability CVE-2020-11078**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|httplib2|0.18.0|[CVE-2020-11078](https://avd.aquasec.com/nvd/cve-2020-11078)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -403,7 +419,8 @@
                     "level": "note"
                   },
                   "help": {
-                    "text": "."
+                    "text": ".",
+                    "markdown": "**Vulnerability pyup.io-38303**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|httplib2|0.18.0|[pyup.io-38303]()|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -427,7 +444,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-28493",
                   "help": {
-                    "text": "This affects the package jinja2 from 0.0.0 and before 2.11.3. The ReDoS vulnerability is mainly due to the `_punctuation_re regex` operator and its use of multiple wildcards. The last wildcard is the most exploitable as it searches for trailing punctuation. This issue can be mitigated by Markdown to format user content instead of the urlize filter, or by implementing request timeouts and limiting process memory."
+                    "text": "This affects the package jinja2 from 0.0.0 and before 2.11.3. The ReDoS vulnerability is mainly due to the `_punctuation_re regex` operator and its use of multiple wildcards. The last wildcard is the most exploitable as it searches for trailing punctuation. This issue can be mitigated by Markdown to format user content instead of the urlize filter, or by implementing request timeouts and limiting process memory.",
+                    "markdown": "**Vulnerability CVE-2020-28493**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jinja2|2.11.3|[CVE-2020-28493](https://avd.aquasec.com/nvd/cve-2020-28493)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -451,7 +469,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-29651",
                   "help": {
-                    "text": "A denial of service via regular expression in the py.path.svnwc component of py (aka python-py) through 1.9.0 could be used by attackers to cause a compute-time denial of service attack by supplying malicious input to the blame functionality."
+                    "text": "A denial of service via regular expression in the py.path.svnwc component of py (aka python-py) through 1.9.0 could be used by attackers to cause a compute-time denial of service attack by supplying malicious input to the blame functionality.",
+                    "markdown": "**Vulnerability CVE-2020-29651**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|py||[CVE-2020-29651](https://avd.aquasec.com/nvd/cve-2020-29651)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -475,7 +494,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2021-20270",
                   "help": {
-                    "text": "An infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the &#34;exception&#34; keyword."
+                    "text": "An infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the &#34;exception&#34; keyword.",
+                    "markdown": "**Vulnerability CVE-2021-20270**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|pygments|2.7.4|[CVE-2021-20270](https://avd.aquasec.com/nvd/cve-2021-20270)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -499,7 +519,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2021-27291",
                   "help": {
-                    "text": "In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming languages rely heavily on regular expressions. Some of the regular expressions have exponential or cubic worst-case complexity and are vulnerable to ReDoS. By crafting malicious input, an attacker can cause a denial of service."
+                    "text": "In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming languages rely heavily on regular expressions. Some of the regular expressions have exponential or cubic worst-case complexity and are vulnerable to ReDoS. By crafting malicious input, an attacker can cause a denial of service.",
+                    "markdown": "**Vulnerability CVE-2021-27291**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|pygments|2.7.4|[CVE-2021-27291](https://avd.aquasec.com/nvd/cve-2021-27291)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -523,7 +544,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2019-20477",
                   "help": {
-                    "text": "PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342."
+                    "text": "PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342.",
+                    "markdown": "**Vulnerability CVE-2019-20477**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|pyyaml||[CVE-2019-20477](https://avd.aquasec.com/nvd/cve-2019-20477)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -547,7 +569,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-14343",
                   "help": {
-                    "text": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747."
+                    "text": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747.",
+                    "markdown": "**Vulnerability CVE-2020-14343**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|pyyaml|5.4|[CVE-2020-14343](https://avd.aquasec.com/nvd/cve-2020-14343)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -571,7 +594,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-1747",
                   "help": {
-                    "text": "A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor."
+                    "text": "A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor.",
+                    "markdown": "**Vulnerability CVE-2020-1747**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|pyyaml|5.3.1|[CVE-2020-1747](https://avd.aquasec.com/nvd/cve-2020-1747)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -595,7 +619,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2019-11324",
                   "help": {
-                    "text": "The urllib3 library before 1.24.2 for Python mishandles certain cases where the desired set of CA certificates is different from the OS store of CA certificates, which results in SSL connections succeeding in situations where a verification failure is the correct outcome. This is related to use of the ssl_context, ca_certs, or ca_certs_dir argument."
+                    "text": "The urllib3 library before 1.24.2 for Python mishandles certain cases where the desired set of CA certificates is different from the OS store of CA certificates, which results in SSL connections succeeding in situations where a verification failure is the correct outcome. This is related to use of the ssl_context, ca_certs, or ca_certs_dir argument.",
+                    "markdown": "**Vulnerability CVE-2019-11324**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|urllib3|1.24.2|[CVE-2019-11324](https://avd.aquasec.com/nvd/cve-2019-11324)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -619,7 +644,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2021-33503",
                   "help": {
-                    "text": "An issue was discovered in urllib3 before 1.26.5. When provided with a URL containing many @ characters in the authority component, the authority regular expression exhibits catastrophic backtracking, causing a denial of service if a URL were passed as a parameter or redirected to via an HTTP redirect."
+                    "text": "An issue was discovered in urllib3 before 1.26.5. When provided with a URL containing many @ characters in the authority component, the authority regular expression exhibits catastrophic backtracking, causing a denial of service if a URL were passed as a parameter or redirected to via an HTTP redirect.",
+                    "markdown": "**Vulnerability CVE-2021-33503**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|urllib3|1.26.5|[CVE-2021-33503](https://avd.aquasec.com/nvd/cve-2021-33503)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -643,7 +669,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2019-11236",
                   "help": {
-                    "text": "In the urllib3 library through 1.24.1 for Python, CRLF injection is possible if the attacker controls the request parameter."
+                    "text": "In the urllib3 library through 1.24.1 for Python, CRLF injection is possible if the attacker controls the request parameter.",
+                    "markdown": "**Vulnerability CVE-2019-11236**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|urllib3||[CVE-2019-11236](https://avd.aquasec.com/nvd/cve-2019-11236)|\n"                    
                   },
                   "properties": {
                     "tags": [
@@ -667,7 +694,8 @@
                   },
                   "helpUri": "https://avd.aquasec.com/nvd/cve-2020-26137",
                   "help": {
-                    "text": "urllib3 before 1.25.9 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of putrequest(). NOTE: this is similar to CVE-2020-26116."
+                    "text": "urllib3 before 1.25.9 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of putrequest(). NOTE: this is similar to CVE-2020-26116.",
+                    "markdown": "**Vulnerability CVE-2020-26137**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|urllib3|1.25.9|[CVE-2020-26137](https://avd.aquasec.com/nvd/cve-2020-26137)|\n"                    
                   },
                   "properties": {
                     "tags": [
