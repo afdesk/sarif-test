@@ -35,6 +35,7 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'conf'
+          ignore-unfixed: true
           format: 'template'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-results.sarif'
