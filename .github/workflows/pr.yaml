@@ -14,8 +14,8 @@ jobs:
     name: PR
     runs-on: ubuntu-18.04
     steps:
-      - run: pwd
-      - run: ls -l
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: trivy - fs
         uses: aquasecurity/trivy-action@master
@@ -23,7 +23,7 @@ jobs:
           scan-type: 'fs'
           ignore-unfixed: true
           format: 'template'
-          template: '@./sarif.tpl'
+          template: '@sarif.tpl'
           output: 'trivy-results.sarif'
           exit-code: 0
 
