@@ -4,6 +4,9 @@ name: PR
 on:
   pull_request:
     branches: [main]
+    paths:
+      - '**.lock'
+      - 'package-lock.json'
 
 jobs:
 

@@ -3,7 +3,9 @@ on:
   push:
     branches:
       - main
-  pull_request:
+    paths:
+      - '**.lock'
+      - 'package-lock.json'
 jobs:
   build:
     name: Build
