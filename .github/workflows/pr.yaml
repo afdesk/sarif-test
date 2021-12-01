@@ -8,15 +8,9 @@ on:
 jobs:
 
   build:
-    name: Build
+    name: PR
     runs-on: ubuntu-18.04
     steps:
-
-      - name: Set up Go 1.x
-        uses: actions/setup-go@v2
-        with:
-          go-version: ^1.16
-        id: go
 
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
@@ -25,16 +19,6 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
-          ignore-unfixed: true
-          format: 'template'
-          template: '@/contrib/sarif.tpl'
-          output: 'trivy-results.sarif'
-          exit-code: 0
-
-      - name: Run Trivy vulnerability scanner in repo mode
-        uses: aquasecurity/trivy-action@master
-        with:
-          scan-type: 'conf'
           ignore-unfixed: true
           format: 'template'
           template: '@/contrib/sarif.tpl'
