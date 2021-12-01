@@ -24,7 +24,7 @@ jobs:
           scan-type: 'fs'
           ignore-unfixed: true
           format: 'template'
-          template: '@/contrib/sarif.tpl'
+          template: '@sarif.tpl'
           output: 'trivy-results.sarif'
           exit-code: 0
 
