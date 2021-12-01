@@ -14,13 +14,16 @@ jobs:
     name: PR
     runs-on: ubuntu-18.04
     steps:
+      - run: pwd
+      - run: ls -l
+
       - name: trivy - fs
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
           ignore-unfixed: true
           format: 'template'
-          template: '@($pwd)/sarif.tpl'
+          template: '@./sarif.tpl'
           output: 'trivy-results.sarif'
           exit-code: 0
 
