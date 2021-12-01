@@ -14,10 +14,6 @@ jobs:
     name: PR
     runs-on: ubuntu-18.04
     steps:
-
-      - name: Check out code into the Go module directory
-        uses: actions/checkout@v2
-
       - name: trivy - fs
         uses: aquasecurity/trivy-action@master
         with:
