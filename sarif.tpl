@@ -8,7 +8,7 @@
         "driver": {
           "name": "Trivy",
           "informationUri": "https://github.com/aquasecurity/trivy",
-          "fullName": "Trivy Vulnerability Scanner",
+          "fullName": "Trivy Vulnerability Scanner - t1",
           "version": "0.15.0",
           "rules": [
         {{- $t_first := true }}
