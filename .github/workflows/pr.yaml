@@ -1,20 +1,23 @@
-name: build
+---
+name: PR
+
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    branches: [main]
     paths:
       - '**.lock'
       - 'package-lock.json'
+
 jobs:
+
   build:
-    name: Build
+    name: PR
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run Trivy vulnerability scanner
+      - name: trivy - fs
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
@@ -35,4 +38,4 @@ jobs:
         with:
           name: 'trivy-results.sarif'
           path: 'trivy-results.sarif'
-          retention-days: 5
+          retention-days: 5      
