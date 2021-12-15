@@ -6,6 +6,7 @@
       "tool": {
         "driver": {
           "name": "Trivy",
+          "fullName": "Trivy Vulnerability Scanner",
           "version": "0.21.3",
           "informationUri": "https://github.com/aquasecurity/trivy",
           "rules": [
