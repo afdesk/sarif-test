@@ -7,10 +7,78 @@
         "driver": {
           "name": "Trivy",
           "version": "dev",
-          "informationUri": "https://github.com/aquasecurity/trivy"
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "rules": [
+            {
+              "id": "DS002",
+              "name": "OtherVulnerability",
+              "shortDescription": {
+                "text": "DS002"
+              },
+              "fullDescription": {
+                "text": "Running containers with \u0026#39;root\u0026#39; user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a \u0026#39;USER\u0026#39; statement to the Dockerfile."
+              },
+              "help": {
+                "text": "Vulnerability DS002\\nRunning containers with \u0026#39;root\u0026#39; user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a \u0026#39;USER\u0026#39; statement to the Dockerfile.\\nSeverity: HIGH\\nPackage: dockerfile\\nFixed Version: \\nLink: [DS002](https://avd.aquasec.com/appshield/ds002)",
+                "markdown": "**Vulnerability DS002**\nRunning containers with \u0026#39;root\u0026#39; user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a \u0026#39;USER\u0026#39; statement to the Dockerfile.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|dockerfile||[DS002](https://avd.aquasec.com/appshield/ds002)|\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "vulnerability",
+                  "HIGH"
+                ]
+              }
+            }
+          ]
         }
       },
-      "results": null
+      "results": [
+        {
+          "ruleId": "DS002",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DS002",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "subc/Dockerfile",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
