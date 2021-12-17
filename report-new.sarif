@@ -23,8 +23,8 @@
               },
               "helpUri": "https://avd.aquasec.com/appshield/ds002",
               "help": {
-                "text": "Misconfiguration DS002\nRunning containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\nSeverity: HIGH\nPackage: dockerfile\nFixed Version: \nLink: [DS002](https://avd.aquasec.com/appshield/ds002)",
-                "markdown": "**Misconfiguration DS002**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|dockerfile||[DS002](https://avd.aquasec.com/appshield/ds002)|\nRunning containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\n"
+                "text": "Misconfiguration DS002\nRunning containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\nSeverity: HIGH\nPackage: dockerfile\nFixed Version: Add 'USER \u003cnon root user name\u003e' line to the Dockerfile\nLink: [DS002](https://avd.aquasec.com/appshield/ds002)",
+                "markdown": "**Misconfiguration DS002**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|dockerfile|Add 'USER \u003cnon root user name\u003e' line to the Dockerfile|[DS002](https://avd.aquasec.com/appshield/ds002)|\nRunning containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.\n"
               },
               "properties": {
                 "precision": "very-high",
@@ -43,7 +43,7 @@
           "ruleIndex": 0,
           "level": "error",
           "message": {
-            "text": "Package: dockerfile\nInstalled Version: \nVulnerability DS002\nSeverity: HIGH\nFixed Version: \nLink: [DS002](https://avd.aquasec.com/appshield/ds002)"
+            "text": "Package: dockerfile\nInstalled Version: Specify at least 1 USER command in Dockerfile with non-root user as argument\nVulnerability DS002\nSeverity: HIGH\nFixed Version: Add 'USER \u003cnon root user name\u003e' line to the Dockerfile\nLink: [DS002](https://avd.aquasec.com/appshield/ds002)"
           },
           "locations": [
             {
