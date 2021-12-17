@@ -41,14 +41,14 @@
                 "text": "pyup.io-42498"
               },
               "fullDescription": {
-                "text": "Celery 5.2.0 updates \u0026#39;kombu\u0026#39; to v5.2.1, which includes dependencies updates that resolve security issues."
+                "text": "Celery 5.2.0 updates &#39;kombu&#39; to v5.2.1, which includes dependencies updates that resolve security issues."
               },
               "defaultConfiguration": {
                 "level": "note"
               },
               "help": {
-                "text": "Vulnerability pyup.io-42498\nCelery 5.2.0 updates \u0026#39;kombu\u0026#39; to v5.2.1, which includes dependencies updates that resolve security issues.\nSeverity: UNKNOWN\nPackage: celery\nFixed Version: 5.2.0\nLink: [pyup.io-42498]()",
-                "markdown": "**Vulnerability pyup.io-42498**\nCelery 5.2.0 updates \u0026#39;kombu\u0026#39; to v5.2.1, which includes dependencies updates that resolve security issues.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|celery|5.2.0|[pyup.io-42498]()|\n"
+                "text": "Vulnerability pyup.io-42498\nCelery 5.2.0 updates &#39;kombu&#39; to v5.2.1, which includes dependencies updates that resolve security issues.\nSeverity: UNKNOWN\nPackage: celery\nFixed Version: 5.2.0\nLink: [pyup.io-42498]()",
+                "markdown": "**Vulnerability pyup.io-42498**\nCelery 5.2.0 updates &#39;kombu&#39; to v5.2.1, which includes dependencies updates that resolve security issues.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|celery|5.2.0|[pyup.io-42498]()|\n"
               },
               "properties": {
                 "precision": "very-high",
@@ -65,15 +65,15 @@
                 "text": "CVE-2019-19844"
               },
               "fullDescription": {
-                "text": "Django before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user\u0026#39;s email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.)"
+                "text": "Django before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user&#39;s email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.)"
               },
               "defaultConfiguration": {
                 "level": "error"
               },
               "helpUri": "https://avd.aquasec.com/nvd/cve-2019-19844",
               "help": {
-                "text": "Vulnerability CVE-2019-19844\nDjango before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user\u0026#39;s email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.)\nSeverity: CRITICAL\nPackage: django\nFixed Version: 3.0.1, 2.2.9, 1.11.27\nLink: [CVE-2019-19844](https://avd.aquasec.com/nvd/cve-2019-19844)",
-                "markdown": "**Vulnerability CVE-2019-19844**\nDjango before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user\u0026#39;s email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.)\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|django|3.0.1, 2.2.9, 1.11.27|[CVE-2019-19844](https://avd.aquasec.com/nvd/cve-2019-19844)|\n"
+                "text": "Vulnerability CVE-2019-19844\nDjango before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user&#39;s email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.)\nSeverity: CRITICAL\nPackage: django\nFixed Version: 3.0.1, 2.2.9, 1.11.27\nLink: [CVE-2019-19844](https://avd.aquasec.com/nvd/cve-2019-19844)",
+                "markdown": "**Vulnerability CVE-2019-19844**\nDjango before 1.11.27, 2.x before 2.2.9, and 3.x before 3.0.1 allows account takeover. A suitably crafted email address (that is equal to an existing user&#39;s email address after case transformation of Unicode characters) would allow an attacker to be sent a password reset token for the matched user account. (One mitigation in the new releases is to send password reset tokens only to the registered user email address.)\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|django|3.0.1, 2.2.9, 1.11.27|[CVE-2019-19844](https://avd.aquasec.com/nvd/cve-2019-19844)|\n"
               },
               "properties": {
                 "precision": "very-high",
@@ -290,14 +290,14 @@
                 "text": "pyup.io-37132"
               },
               "fullDescription": {
-                "text": "Django-cors-headers version 3.0.0 fixes a security issue where the CORS middleware would allow requests between schemes, for example from insecure \u0026#39;http://\u0026#39; origins to a secure \u0026#39;https://\u0026#39; site. Now you will need to update your whitelist to include schemes, for example from this:\r\nCORS_ORIGIN_WHITELIST = [\u0026#39;example.com\u0026#39;]\r\nto this:\r\nCORS_ORIGIN_WHITELIST = [\u0026#39;https://example.com\u0026#39;]\r\nhttps://github.com/adamchainz/django-cors-headers/issues/259"
+                "text": "Django-cors-headers version 3.0.0 fixes a security issue where the CORS middleware would allow requests between schemes, for example from insecure &#39;http://&#39; origins to a secure &#39;https://&#39; site. Now you will need to update your whitelist to include schemes, for example from this:\r\nCORS_ORIGIN_WHITELIST = [&#39;example.com&#39;]\r\nto this:\r\nCORS_ORIGIN_WHITELIST = [&#39;https://example.com&#39;]\r\nhttps://github.com/adamchainz/django-cors-headers/issues/259"
               },
               "defaultConfiguration": {
                 "level": "note"
               },
               "help": {
-                "text": "Vulnerability pyup.io-37132\nDjango-cors-headers version 3.0.0 fixes a security issue where the CORS middleware would allow requests between schemes, for example from insecure \u0026#39;http://\u0026#39; origins to a secure \u0026#39;https://\u0026#39; site. Now you will need to update your whitelist to include schemes, for example from this:\r\nCORS_ORIGIN_WHITELIST = [\u0026#39;example.com\u0026#39;]\r\nto this:\r\nCORS_ORIGIN_WHITELIST = [\u0026#39;https://example.com\u0026#39;]\r\nhttps://github.com/adamchainz/django-cors-headers/issues/259\nSeverity: UNKNOWN\nPackage: django-cors-headers\nFixed Version: 3.0.0\nLink: [pyup.io-37132]()",
-                "markdown": "**Vulnerability pyup.io-37132**\nDjango-cors-headers version 3.0.0 fixes a security issue where the CORS middleware would allow requests between schemes, for example from insecure \u0026#39;http://\u0026#39; origins to a secure \u0026#39;https://\u0026#39; site. Now you will need to update your whitelist to include schemes, for example from this:\r\nCORS_ORIGIN_WHITELIST = [\u0026#39;example.com\u0026#39;]\r\nto this:\r\nCORS_ORIGIN_WHITELIST = [\u0026#39;https://example.com\u0026#39;]\r\nhttps://github.com/adamchainz/django-cors-headers/issues/259\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|django-cors-headers|3.0.0|[pyup.io-37132]()|\n"
+                "text": "Vulnerability pyup.io-37132\nDjango-cors-headers version 3.0.0 fixes a security issue where the CORS middleware would allow requests between schemes, for example from insecure &#39;http://&#39; origins to a secure &#39;https://&#39; site. Now you will need to update your whitelist to include schemes, for example from this:\r\nCORS_ORIGIN_WHITELIST = [&#39;example.com&#39;]\r\nto this:\r\nCORS_ORIGIN_WHITELIST = [&#39;https://example.com&#39;]\r\nhttps://github.com/adamchainz/django-cors-headers/issues/259\nSeverity: UNKNOWN\nPackage: django-cors-headers\nFixed Version: 3.0.0\nLink: [pyup.io-37132]()",
+                "markdown": "**Vulnerability pyup.io-37132**\nDjango-cors-headers version 3.0.0 fixes a security issue where the CORS middleware would allow requests between schemes, for example from insecure &#39;http://&#39; origins to a secure &#39;https://&#39; site. Now you will need to update your whitelist to include schemes, for example from this:\r\nCORS_ORIGIN_WHITELIST = [&#39;example.com&#39;]\r\nto this:\r\nCORS_ORIGIN_WHITELIST = [&#39;https://example.com&#39;]\r\nhttps://github.com/adamchainz/django-cors-headers/issues/259\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|django-cors-headers|3.0.0|[pyup.io-37132]()|\n"
               },
               "properties": {
                 "precision": "very-high",
@@ -338,15 +338,15 @@
                 "text": "CVE-2020-25626"
               },
               "fullDescription": {
-                "text": "A flaw was found in Django REST Framework versions before 3.12.0 and before 3.11.2. When using the browseable API viewer, Django REST Framework fails to properly escape certain strings that can come from user input. This allows a user who can control those strings to inject malicious \u0026lt;script\u0026gt; tags, leading to a cross-site-scripting (XSS) vulnerability."
+                "text": "A flaw was found in Django REST Framework versions before 3.12.0 and before 3.11.2. When using the browseable API viewer, Django REST Framework fails to properly escape certain strings that can come from user input. This allows a user who can control those strings to inject malicious &lt;script&gt; tags, leading to a cross-site-scripting (XSS) vulnerability."
               },
               "defaultConfiguration": {
                 "level": "warning"
               },
               "helpUri": "https://avd.aquasec.com/nvd/cve-2020-25626",
               "help": {
-                "text": "Vulnerability CVE-2020-25626\nA flaw was found in Django REST Framework versions before 3.12.0 and before 3.11.2. When using the browseable API viewer, Django REST Framework fails to properly escape certain strings that can come from user input. This allows a user who can control those strings to inject malicious \u0026lt;script\u0026gt; tags, leading to a cross-site-scripting (XSS) vulnerability.\nSeverity: MEDIUM\nPackage: djangorestframework\nFixed Version: 3.11.2\nLink: [CVE-2020-25626](https://avd.aquasec.com/nvd/cve-2020-25626)",
-                "markdown": "**Vulnerability CVE-2020-25626**\nA flaw was found in Django REST Framework versions before 3.12.0 and before 3.11.2. When using the browseable API viewer, Django REST Framework fails to properly escape certain strings that can come from user input. This allows a user who can control those strings to inject malicious \u0026lt;script\u0026gt; tags, leading to a cross-site-scripting (XSS) vulnerability.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|djangorestframework|3.11.2|[CVE-2020-25626](https://avd.aquasec.com/nvd/cve-2020-25626)|\n"
+                "text": "Vulnerability CVE-2020-25626\nA flaw was found in Django REST Framework versions before 3.12.0 and before 3.11.2. When using the browseable API viewer, Django REST Framework fails to properly escape certain strings that can come from user input. This allows a user who can control those strings to inject malicious &lt;script&gt; tags, leading to a cross-site-scripting (XSS) vulnerability.\nSeverity: MEDIUM\nPackage: djangorestframework\nFixed Version: 3.11.2\nLink: [CVE-2020-25626](https://avd.aquasec.com/nvd/cve-2020-25626)",
+                "markdown": "**Vulnerability CVE-2020-25626**\nA flaw was found in Django REST Framework versions before 3.12.0 and before 3.11.2. When using the browseable API viewer, Django REST Framework fails to properly escape certain strings that can come from user input. This allows a user who can control those strings to inject malicious &lt;script&gt; tags, leading to a cross-site-scripting (XSS) vulnerability.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|djangorestframework|3.11.2|[CVE-2020-25626](https://avd.aquasec.com/nvd/cve-2020-25626)|\n"
               },
               "properties": {
                 "precision": "very-high",
@@ -411,15 +411,15 @@
                 "text": "CVE-2021-21240"
               },
               "fullDescription": {
-                "text": "httplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of \u0026#34;\\xa0\u0026#34; characters in the \u0026#34;www-authenticate\u0026#34; header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library."
+                "text": "httplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of &#34;\\xa0&#34; characters in the &#34;www-authenticate&#34; header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library."
               },
               "defaultConfiguration": {
                 "level": "error"
               },
               "helpUri": "https://avd.aquasec.com/nvd/cve-2021-21240",
               "help": {
-                "text": "Vulnerability CVE-2021-21240\nhttplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of \u0026#34;\\xa0\u0026#34; characters in the \u0026#34;www-authenticate\u0026#34; header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library.\nSeverity: HIGH\nPackage: httplib2\nFixed Version: 0.19.0\nLink: [CVE-2021-21240](https://avd.aquasec.com/nvd/cve-2021-21240)",
-                "markdown": "**Vulnerability CVE-2021-21240**\nhttplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of \u0026#34;\\xa0\u0026#34; characters in the \u0026#34;www-authenticate\u0026#34; header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|httplib2|0.19.0|[CVE-2021-21240](https://avd.aquasec.com/nvd/cve-2021-21240)|\n"
+                "text": "Vulnerability CVE-2021-21240\nhttplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of &#34;\\xa0&#34; characters in the &#34;www-authenticate&#34; header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library.\nSeverity: HIGH\nPackage: httplib2\nFixed Version: 0.19.0\nLink: [CVE-2021-21240](https://avd.aquasec.com/nvd/cve-2021-21240)",
+                "markdown": "**Vulnerability CVE-2021-21240**\nhttplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of &#34;\\xa0&#34; characters in the &#34;www-authenticate&#34; header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|httplib2|0.19.0|[CVE-2021-21240](https://avd.aquasec.com/nvd/cve-2021-21240)|\n"
               },
               "properties": {
                 "precision": "very-high",
@@ -461,14 +461,14 @@
                 "text": "pyup.io-38303"
               },
               "fullDescription": {
-                "text": "Httplib2 0.18.0 is an important security update to patch a CWE-93 CRLF injection vulnerability which forces %xx quote of space, CR, LF characters in uri. See: \u0026lt;https://cwe.mitre.org/data/definitions/93.html\u0026gt;."
+                "text": "Httplib2 0.18.0 is an important security update to patch a CWE-93 CRLF injection vulnerability which forces %xx quote of space, CR, LF characters in uri. See: &lt;https://cwe.mitre.org/data/definitions/93.html&gt;."
               },
               "defaultConfiguration": {
                 "level": "note"
               },
               "help": {
-                "text": "Vulnerability pyup.io-38303\nHttplib2 0.18.0 is an important security update to patch a CWE-93 CRLF injection vulnerability which forces %xx quote of space, CR, LF characters in uri. See: \u0026lt;https://cwe.mitre.org/data/definitions/93.html\u0026gt;.\nSeverity: UNKNOWN\nPackage: httplib2\nFixed Version: 0.18.0\nLink: [pyup.io-38303]()",
-                "markdown": "**Vulnerability pyup.io-38303**\nHttplib2 0.18.0 is an important security update to patch a CWE-93 CRLF injection vulnerability which forces %xx quote of space, CR, LF characters in uri. See: \u0026lt;https://cwe.mitre.org/data/definitions/93.html\u0026gt;.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|httplib2|0.18.0|[pyup.io-38303]()|\n"
+                "text": "Vulnerability pyup.io-38303\nHttplib2 0.18.0 is an important security update to patch a CWE-93 CRLF injection vulnerability which forces %xx quote of space, CR, LF characters in uri. See: &lt;https://cwe.mitre.org/data/definitions/93.html&gt;.\nSeverity: UNKNOWN\nPackage: httplib2\nFixed Version: 0.18.0\nLink: [pyup.io-38303]()",
+                "markdown": "**Vulnerability pyup.io-38303**\nHttplib2 0.18.0 is an important security update to patch a CWE-93 CRLF injection vulnerability which forces %xx quote of space, CR, LF characters in uri. See: &lt;https://cwe.mitre.org/data/definitions/93.html&gt;.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|UNKNOWN|httplib2|0.18.0|[pyup.io-38303]()|\n"
               },
               "properties": {
                 "precision": "very-high",
@@ -559,15 +559,15 @@
                 "text": "CVE-2021-20270"
               },
               "fullDescription": {
-                "text": "An infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the \u0026#34;exception\u0026#34; keyword."
+                "text": "An infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the &#34;exception&#34; keyword."
               },
               "defaultConfiguration": {
                 "level": "error"
               },
               "helpUri": "https://avd.aquasec.com/nvd/cve-2021-20270",
               "help": {
-                "text": "Vulnerability CVE-2021-20270\nAn infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the \u0026#34;exception\u0026#34; keyword.\nSeverity: HIGH\nPackage: pygments\nFixed Version: 2.7.4\nLink: [CVE-2021-20270](https://avd.aquasec.com/nvd/cve-2021-20270)",
-                "markdown": "**Vulnerability CVE-2021-20270**\nAn infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the \u0026#34;exception\u0026#34; keyword.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|pygments|2.7.4|[CVE-2021-20270](https://avd.aquasec.com/nvd/cve-2021-20270)|\n"
+                "text": "Vulnerability CVE-2021-20270\nAn infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the &#34;exception&#34; keyword.\nSeverity: HIGH\nPackage: pygments\nFixed Version: 2.7.4\nLink: [CVE-2021-20270](https://avd.aquasec.com/nvd/cve-2021-20270)",
+                "markdown": "**Vulnerability CVE-2021-20270**\nAn infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the &#34;exception&#34; keyword.\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|pygments|2.7.4|[CVE-2021-20270](https://avd.aquasec.com/nvd/cve-2021-20270)|\n"
               },
               "properties": {
                 "precision": "very-high",
