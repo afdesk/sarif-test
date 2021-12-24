@@ -28,8 +28,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -52,8 +54,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 0,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "UNKNOWN"
                 ]
               }
@@ -77,8 +81,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 9,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "CRITICAL"
                 ]
               }
@@ -102,8 +108,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 9,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "CRITICAL"
                 ]
               }
@@ -127,8 +135,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -152,8 +162,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -177,8 +189,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -202,8 +216,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -227,8 +243,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "MEDIUM"
                 ]
               }
@@ -252,8 +270,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "MEDIUM"
                 ]
               }
@@ -277,8 +297,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "MEDIUM"
                 ]
               }
@@ -301,8 +323,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 0,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "UNKNOWN"
                 ]
               }
@@ -325,8 +349,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 0,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "UNKNOWN"
                 ]
               }
@@ -350,8 +376,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "MEDIUM"
                 ]
               }
@@ -374,8 +402,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 0,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "UNKNOWN"
                 ]
               }
@@ -398,8 +428,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 0,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "UNKNOWN"
                 ]
               }
@@ -423,8 +455,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 3.5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "LOW"
                 ]
               }
@@ -448,8 +482,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 3.5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "LOW"
                 ]
               }
@@ -472,8 +508,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 0,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "UNKNOWN"
                 ]
               }
@@ -497,8 +535,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "MEDIUM"
                 ]
               }
@@ -521,8 +561,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 0,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "UNKNOWN"
                 ]
               }
@@ -546,8 +588,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -571,8 +615,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -596,8 +642,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "MEDIUM"
                 ]
               }
@@ -621,8 +669,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 9,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "CRITICAL"
                 ]
               }
@@ -646,8 +696,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -671,8 +723,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -696,8 +750,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 9,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "CRITICAL"
                 ]
               }
@@ -721,8 +777,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -746,8 +804,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 8,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "HIGH"
                 ]
               }
@@ -771,8 +831,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "MEDIUM"
                 ]
               }
@@ -796,8 +858,10 @@
               },
               "properties": {
                 "precision": "very-high",
+                "security-severity": 5,
                 "tags": [
                   "vulnerability",
+                  "security",
                   "MEDIUM"
                 ]
               }
@@ -2151,7 +2215,13 @@
             }
           ]
         }
-      ]
+      ],
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///"
+        }
+      }
     }
   ]
 }
