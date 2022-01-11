@@ -30,7 +30,7 @@
                 "precision": "very-high",
                 "security-severity": "8.0",
                 "tags": [
-                  "vulnerability",
+                  "misconfiguration",
                   "security",
                   "HIGH",
                   "8.0"
