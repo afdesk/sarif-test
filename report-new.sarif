@@ -32,7 +32,8 @@
                 "tags": [
                   "vulnerability",
                   "security",
-                  "HIGH"
+                  "HIGH",
+                  "8.0"
                 ]
               }
             }
