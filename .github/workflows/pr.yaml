@@ -28,8 +28,8 @@ jobs:
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v1
         with:
-          sarif_file: 'report-new.sarif'
-#          sarif_file: 'trivy-results.sarif'
+#          sarif_file: 'report-new.sarif'
+          sarif_file: 'trivy-results.sarif'
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v2
