@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: trivy - fs
-        uses: aquasecurity/trivy-action@master
+        uses: afdesk/trivy-action@master
         with:
           format: 'sarif'
           output: 'trivy-results.sarif'
