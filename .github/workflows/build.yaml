@@ -15,6 +15,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
+          scan-type: 'fs'
           format: 'sarif'
           output: 'trivy-results.sarif'
           exit-code: 0
