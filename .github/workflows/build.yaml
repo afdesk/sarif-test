@@ -22,7 +22,6 @@ jobs:
           image-ref: 'docker.io/afdesk/sarif-demo:${{ github.sha }}'
           format: 'sarif'
           output: 'trivy-results.sarif'
-          exit-code: '1'
           vuln-type: 'os,library'
 
       - name: Upload Trivy scan results to GitHub Security tab
