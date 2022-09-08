@@ -602,6 +602,60 @@
                   "MEDIUM"
                 ]
               }
+            },
+            {
+              "id": "aws-access-key-id",
+              "name": "Secret",
+              "shortDescription": {
+                "text": "aws-access-key-id"
+              },
+              "fullDescription": {
+                "text": "export AWS_ACCESS_KEY_ID=********************"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://github.com/aquasecurity/trivy/blob/main/pkg/fanal/secret/builtin-rules.go",
+              "help": {
+                "text": "Secret AWS Access Key ID\nSeverity: CRITICAL\nMatch: export AWS_ACCESS_KEY_ID=********************",
+                "markdown": "**Secret AWS Access Key ID**\n| Severity | Match |\n| --- | --- |\n|CRITICAL|export AWS_ACCESS_KEY_ID=********************|"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.5",
+                "tags": [
+                  "secret",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "github-pat",
+              "name": "Secret",
+              "shortDescription": {
+                "text": "github-pat"
+              },
+              "fullDescription": {
+                "text": "export GITHUB_PAT=****************************************"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://github.com/aquasecurity/trivy/blob/main/pkg/fanal/secret/builtin-rules.go",
+              "help": {
+                "text": "Secret GitHub Personal Access Token\nSeverity: CRITICAL\nMatch: export GITHUB_PAT=****************************************",
+                "markdown": "**Secret GitHub Personal Access Token**\n| Severity | Match |\n| --- | --- |\n|CRITICAL|export GITHUB_PAT=****************************************|"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.5",
+                "tags": [
+                  "secret",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
             }
           ],
           "version": "dev"
@@ -1658,6 +1712,54 @@
                   "startLine": 1,
                   "startColumn": 1,
                   "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "aws-access-key-id",
+          "ruleIndex": 22,
+          "level": "error",
+          "message": {
+            "text": "Artifact: secrets/deploy.sh\nType: \nSecret AWS Access Key ID\nSeverity: CRITICAL\nMatch: export AWS_ACCESS_KEY_ID=********************"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "secrets/deploy.sh",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "github-pat",
+          "ruleIndex": 23,
+          "level": "error",
+          "message": {
+            "text": "Artifact: secrets/deploy.sh\nType: \nSecret GitHub Personal Access Token\nSeverity: CRITICAL\nMatch: export GITHUB_PAT=****************************************"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "secrets/deploy.sh",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
                   "endColumn": 1
                 }
               }
