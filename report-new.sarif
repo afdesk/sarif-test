@@ -185,8 +185,8 @@
               },
               "helpUri": "https://avd.aquasec.com/nvd/cve-2022-30034",
               "help": {
-                "text": "Vulnerability CVE-2022-30034\nSeverity: HIGH\nPackage: flower\nFixed Version: \nLink: [CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)\nFlower, a web UI for the Celery Python RPC framework, all versions as of 05-02-2022 is vulnerable to an OAuth authentication bypass. An attacker could then access the Flower API to discover and invoke arbitrary Celery RPC calls or deny service by shutting down Celery task nodes.",
-                "markdown": "**Vulnerability CVE-2022-30034**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|flower||[CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)|\n\nFlower, a web UI for the Celery Python RPC framework, all versions as of 05-02-2022 is vulnerable to an OAuth authentication bypass. An attacker could then access the Flower API to discover and invoke arbitrary Celery RPC calls or deny service by shutting down Celery task nodes."
+                "text": "Vulnerability CVE-2022-30034\nSeverity: HIGH\nPackage: flower\nFixed Version: 1.2.0\nLink: [CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)\nFlower, a web UI for the Celery Python RPC framework, all versions as of 05-02-2022 is vulnerable to an OAuth authentication bypass. An attacker could then access the Flower API to discover and invoke arbitrary Celery RPC calls or deny service by shutting down Celery task nodes.",
+                "markdown": "**Vulnerability CVE-2022-30034**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|flower|1.2.0|[CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)|\n\nFlower, a web UI for the Celery Python RPC framework, all versions as of 05-02-2022 is vulnerable to an OAuth authentication bypass. An attacker could then access the Flower API to discover and invoke arbitrary Celery RPC calls or deny service by shutting down Celery task nodes."
               },
               "properties": {
                 "precision": "very-high",
@@ -682,6 +682,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: babel@2.6.0"
               }
             }
           ]
@@ -706,6 +709,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: celery@4.3.0"
               }
             }
           ]
@@ -730,6 +736,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -754,6 +763,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -778,6 +790,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -802,6 +817,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: djangorestframework@3.9.2"
               }
             }
           ]
@@ -811,7 +829,7 @@
           "ruleIndex": 6,
           "level": "error",
           "message": {
-            "text": "Package: flower\nInstalled Version: 0.9.3\nVulnerability CVE-2022-30034\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)"
+            "text": "Package: flower\nInstalled Version: 0.9.3\nVulnerability CVE-2022-30034\nSeverity: HIGH\nFixed Version: 1.2.0\nLink: [CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)"
           },
           "locations": [
             {
@@ -826,6 +844,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: flower@0.9.3"
               }
             }
           ]
@@ -850,6 +871,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: httplib2@0.12.1"
               }
             }
           ]
@@ -874,6 +898,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: httplib2@0.12.1"
               }
             }
           ]
@@ -898,6 +925,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: jinja2@2.10.1"
               }
             }
           ]
@@ -922,6 +952,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: py@1.8.0"
               }
             }
           ]
@@ -946,6 +979,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pygments@2.3.1"
               }
             }
           ]
@@ -970,6 +1006,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pygments@2.3.1"
               }
             }
           ]
@@ -994,6 +1033,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pyjwt@1.7.1"
               }
             }
           ]
@@ -1018,6 +1060,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
@@ -1042,6 +1087,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
@@ -1066,6 +1114,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
@@ -1090,6 +1141,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: sqlparse@0.3.0"
               }
             }
           ]
@@ -1114,6 +1168,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
@@ -1138,6 +1195,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
@@ -1162,6 +1222,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
@@ -1186,6 +1249,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
@@ -1210,6 +1276,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: babel@2.6.0"
               }
             }
           ]
@@ -1234,6 +1303,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: celery@4.3.0"
               }
             }
           ]
@@ -1258,6 +1330,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -1282,6 +1357,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -1306,6 +1384,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -1330,6 +1411,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: djangorestframework@3.9.2"
               }
             }
           ]
@@ -1339,7 +1423,7 @@
           "ruleIndex": 6,
           "level": "error",
           "message": {
-            "text": "Package: flower\nInstalled Version: 0.9.3\nVulnerability CVE-2022-30034\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)"
+            "text": "Package: flower\nInstalled Version: 0.9.3\nVulnerability CVE-2022-30034\nSeverity: HIGH\nFixed Version: 1.2.0\nLink: [CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)"
           },
           "locations": [
             {
@@ -1354,6 +1438,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: flower@0.9.3"
               }
             }
           ]
@@ -1378,6 +1465,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: httplib2@0.12.1"
               }
             }
           ]
@@ -1402,6 +1492,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: httplib2@0.12.1"
               }
             }
           ]
@@ -1426,6 +1519,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: jinja2@2.10.1"
               }
             }
           ]
@@ -1450,6 +1546,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: py@1.8.0"
               }
             }
           ]
@@ -1474,6 +1573,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pygments@2.3.1"
               }
             }
           ]
@@ -1498,6 +1600,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pygments@2.3.1"
               }
             }
           ]
@@ -1522,6 +1627,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pyjwt@1.7.1"
               }
             }
           ]
@@ -1546,6 +1654,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
@@ -1570,6 +1681,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
@@ -1594,6 +1708,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
@@ -1618,6 +1735,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: sqlparse@0.3.0"
               }
             }
           ]
@@ -1642,6 +1762,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
@@ -1666,6 +1789,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
@@ -1690,6 +1816,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
@@ -1714,6 +1843,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
@@ -1738,6 +1870,9 @@
                   "endLine": 3,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "secrets/deploy.sh"
               }
             }
           ]
@@ -1762,6 +1897,9 @@
                   "endLine": 5,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "secrets/deploy.sh"
               }
             }
           ]
