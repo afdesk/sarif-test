@@ -13,7 +13,7 @@
               "id": "CVE-2021-42771",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2021-42771"
+                "text": "CVE-2021-20095 CVE-2021-42771 python-babel: Relative path traversal allows attacker to load arbitrary locale files and execute arbitrary code"
               },
               "fullDescription": {
                 "text": "Babel.Locale in Babel before 2.9.1 allows attackers to load arbitrary locale .dat files (containing serialized Python objects) via directory traversal, leading to code execution."
@@ -40,7 +40,7 @@
               "id": "CVE-2021-23727",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2021-23727"
+                "text": "celery: stored command injection vulnerability may allow privileges escalation"
               },
               "fullDescription": {
                 "text": "This affects the package celery before 5.2.2. It by default trusts the messages and metadata stored in backends (result stores). When reading task metadata from the backend, the data is deserialized. Given that an attacker can gain access to, or somehow manipulate the metadata within a celery backend, they could trigger a stored command injection vulnerability and potentially gain further access to the system."
@@ -67,7 +67,7 @@
               "id": "CVE-2019-6975",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2019-6975"
+                "text": "python-django: memory exhaustion in django.utils.numberformat.format()"
               },
               "fullDescription": {
                 "text": "Django 1.11.x before 1.11.19, 2.0.x before 2.0.11, and 2.1.x before 2.1.6 allows Uncontrolled Memory Consumption via a malicious attacker-supplied value to the django.utils.numberformat.format() function."
@@ -94,7 +94,7 @@
               "id": "CVE-2019-3498",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2019-3498"
+                "text": "python-django: Content spoofing via URL path in default 404 page"
               },
               "fullDescription": {
                 "text": "In Django 1.11.x before 1.11.18, 2.0.x before 2.0.10, and 2.1.x before 2.1.5, an Improper Neutralization of Special Elements in Output Used by a Downstream Component issue exists in django.views.defaults.page_not_found(), leading to content spoofing (in a 404 error page) if a user fails to recognize that a crafted URL has malicious content."
@@ -121,7 +121,7 @@
               "id": "CVE-2021-33203",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2021-33203"
+                "text": "django: Potential directory traversal via ``admindocs``"
               },
               "fullDescription": {
                 "text": "Django before 2.2.24, 3.x before 3.1.12, and 3.2.x before 3.2.4 has a potential directory traversal via django.contrib.admindocs. Staff members could use the TemplateDetailView view to check the existence of arbitrary files. Additionally, if (and only if) the default admindocs templates have been customized by application developers to also show file contents, then not only the existence but also the file contents would have been exposed. In other words, there is directory traversal outside of the template root directories."
@@ -148,7 +148,7 @@
               "id": "CVE-2020-25626",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2020-25626"
+                "text": "django-rest-framework: XSS Vulnerability in API viewer"
               },
               "fullDescription": {
                 "text": "A flaw was found in Django REST Framework versions before 3.12.0 and before 3.11.2. When using the browseable API viewer, Django REST Framework fails to properly escape certain strings that can come from user input. This allows a user who can control those strings to inject malicious \u0026lt;script\u0026gt; tags, leading to a cross-site-scripting (XSS) vulnerability."
@@ -175,7 +175,7 @@
               "id": "CVE-2022-30034",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2022-30034"
+                "text": "Flower OAuth authentication bypass"
               },
               "fullDescription": {
                 "text": "Flower, a web UI for the Celery Python RPC framework, all versions as of 05-02-2022 is vulnerable to an OAuth authentication bypass. An attacker could then access the Flower API to discover and invoke arbitrary Celery RPC calls or deny service by shutting down Celery task nodes."
@@ -202,7 +202,7 @@
               "id": "CVE-2021-21240",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2021-21240"
+                "text": "python-httplib2: Regular expression denial of service via malicious header"
               },
               "fullDescription": {
                 "text": "httplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of \u0026#34;\\xa0\u0026#34; characters in the \u0026#34;www-authenticate\u0026#34; header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library."
@@ -229,7 +229,7 @@
               "id": "CVE-2020-11078",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2020-11078"
+                "text": "python-httplib2: CRLF injection via an attacker controlled unescaped part of uri for httplib2.Http.request function"
               },
               "fullDescription": {
                 "text": "In httplib2 before version 0.18.0, an attacker controlling unescaped part of uri for `httplib2.Http.request()` could change request headers and body, send additional hidden requests to same server. This vulnerability impacts software that uses httplib2 with uri constructed by string concatenation, as opposed to proper urllib building with escaping. This has been fixed in 0.18.0."
@@ -256,7 +256,7 @@
               "id": "CVE-2020-28493",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2020-28493"
+                "text": "python-jinja2: ReDoS vulnerability in the urlize filter"
               },
               "fullDescription": {
                 "text": "This affects the package jinja2 from 0.0.0 and before 2.11.3. The ReDoS vulnerability is mainly due to the `_punctuation_re regex` operator and its use of multiple wildcards. The last wildcard is the most exploitable as it searches for trailing punctuation. This issue can be mitigated by Markdown to format user content instead of the urlize filter, or by implementing request timeouts and limiting process memory."
@@ -283,7 +283,7 @@
               "id": "CVE-2020-29651",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2020-29651"
+                "text": "python-py: ReDoS in the py.path.svnwc component via mailicious input to blame functionality"
               },
               "fullDescription": {
                 "text": "A denial of service via regular expression in the py.path.svnwc component of py (aka python-py) through 1.9.0 could be used by attackers to cause a compute-time denial of service attack by supplying malicious input to the blame functionality."
@@ -307,10 +307,37 @@
               }
             },
             {
+              "id": "CVE-2022-42969",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "The py library through 1.11.0 for Python allows remote attackers to co ..."
+              },
+              "fullDescription": {
+                "text": "The py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-42969",
+              "help": {
+                "text": "Vulnerability CVE-2022-42969\nSeverity: HIGH\nPackage: py\nFixed Version: \nLink: [CVE-2022-42969](https://avd.aquasec.com/nvd/cve-2022-42969)\nThe py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled.",
+                "markdown": "**Vulnerability CVE-2022-42969**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|py||[CVE-2022-42969](https://avd.aquasec.com/nvd/cve-2022-42969)|\n\nThe py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
               "id": "CVE-2021-20270",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2021-20270"
+                "text": "python-pygments: Infinite loop in SML lexer may lead to DoS"
               },
               "fullDescription": {
                 "text": "An infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may lead to denial of service when performing syntax highlighting of a Standard ML (SML) source file, as demonstrated by input that only contains the \u0026#34;exception\u0026#34; keyword."
@@ -337,7 +364,7 @@
               "id": "CVE-2021-27291",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2021-27291"
+                "text": "python-pygments: ReDoS in multiple lexers"
               },
               "fullDescription": {
                 "text": "In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming languages rely heavily on regular expressions. Some of the regular expressions have exponential or cubic worst-case complexity and are vulnerable to ReDoS. By crafting malicious input, an attacker can cause a denial of service."
@@ -364,7 +391,7 @@
               "id": "CVE-2022-29217",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2022-29217"
+                "text": "python-jwt: Key confusion through non-blocklisted public key formats"
               },
               "fullDescription": {
                 "text": "PyJWT is a Python implementation of RFC 7519. PyJWT supports multiple different JWT signing algorithms. With JWT, an attacker submitting the JWT token can choose the used signing algorithm. The PyJWT library requires that the application chooses what algorithms are supported. The application can specify `jwt.algorithms.get_default_algorithms()` to get support for all algorithms, or specify a single algorithm. The issue is not that big as `algorithms=jwt.algorithms.get_default_algorithms()` has to be used. Users should upgrade to v2.4.0 to receive a patch for this issue. As a workaround, always be explicit with the algorithms that are accepted and expected when decoding."
@@ -391,7 +418,7 @@
               "id": "CVE-2019-20477",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2019-20477"
+                "text": "PyYAML: command execution through python/object/apply constructor in FullLoader"
               },
               "fullDescription": {
                 "text": "PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342."
@@ -418,7 +445,7 @@
               "id": "CVE-2020-14343",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2020-14343"
+                "text": "PyYAML: incomplete fix for CVE-2020-1747"
               },
               "fullDescription": {
                 "text": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747."
@@ -445,7 +472,7 @@
               "id": "CVE-2020-1747",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2020-1747"
+                "text": "PyYAML: arbitrary command execution through python/object/new when FullLoader is used"
               },
               "fullDescription": {
                 "text": "A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor."
@@ -472,7 +499,7 @@
               "id": "CVE-2021-32839",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2021-32839"
+                "text": "python-sqlparse: ReDoS via regular expression in StripComments filter"
               },
               "fullDescription": {
                 "text": "sqlparse is a non-validating SQL parser module for Python. In sqlparse versions 0.4.0 and 0.4.1 there is a regular Expression Denial of Service in sqlparse vulnerability. The regular expression may cause exponential backtracking on strings containing many repetitions of \u0026#39;\\r\\n\u0026#39; in SQL comments. Only the formatting feature that removes comments from SQL statements is affected by this regular expression. As a workaround don\u0026#39;t use the sqlformat.format function with keyword strip_comments=True or the --strip-comments command line flag when using the sqlformat command line tool. The issues has been fixed in sqlparse 0.4.2."
@@ -499,7 +526,7 @@
               "id": "CVE-2019-11324",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2019-11324"
+                "text": "python-urllib3: Certification mishandle when error should be thrown"
               },
               "fullDescription": {
                 "text": "The urllib3 library before 1.24.2 for Python mishandles certain cases where the desired set of CA certificates is different from the OS store of CA certificates, which results in SSL connections succeeding in situations where a verification failure is the correct outcome. This is related to use of the ssl_context, ca_certs, or ca_certs_dir argument."
@@ -526,7 +553,7 @@
               "id": "CVE-2021-33503",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2021-33503"
+                "text": "python-urllib3: ReDoS in the parsing of authority part of URL"
               },
               "fullDescription": {
                 "text": "An issue was discovered in urllib3 before 1.26.5. When provided with a URL containing many @ characters in the authority component, the authority regular expression exhibits catastrophic backtracking, causing a denial of service if a URL were passed as a parameter or redirected to via an HTTP redirect."
@@ -553,7 +580,7 @@
               "id": "CVE-2019-11236",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2019-11236"
+                "text": "python-urllib3: CRLF injection due to not encoding the \u0026#39;\\r\\n\u0026#39; sequence leading to possible attack on internal service"
               },
               "fullDescription": {
                 "text": "In the urllib3 library through 1.24.1 for Python, CRLF injection is possible if the attacker controls the request parameter."
@@ -580,7 +607,7 @@
               "id": "CVE-2020-26137",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
-                "text": "CVE-2020-26137"
+                "text": "python-urllib3: CRLF injection via HTTP request method"
               },
               "fullDescription": {
                 "text": "urllib3 before 1.25.9 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of putrequest(). NOTE: this is similar to CVE-2020-26116."
@@ -607,7 +634,7 @@
               "id": "aws-access-key-id",
               "name": "Secret",
               "shortDescription": {
-                "text": "aws-access-key-id"
+                "text": "AWS Access Key ID"
               },
               "fullDescription": {
                 "text": "export AWS_ACCESS_KEY_ID=********************"
@@ -634,7 +661,7 @@
               "id": "github-pat",
               "name": "Secret",
               "shortDescription": {
-                "text": "github-pat"
+                "text": "GitHub Personal Access Token"
               },
               "fullDescription": {
                 "text": "export GITHUB_PAT=****************************************"
@@ -658,7 +685,7 @@
               }
             }
           ],
-          "version": "0.32.1"
+          "version": "0.34.0"
         }
       },
       "results": [
@@ -682,6 +709,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: babel@2.6.0"
               }
             }
           ]
@@ -706,6 +736,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: celery@4.3.0"
               }
             }
           ]
@@ -730,6 +763,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -754,6 +790,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -778,6 +817,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -802,6 +844,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: djangorestframework@3.9.2"
               }
             }
           ]
@@ -826,6 +871,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: flower@0.9.3"
               }
             }
           ]
@@ -850,6 +898,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: httplib2@0.12.1"
               }
             }
           ]
@@ -874,6 +925,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: httplib2@0.12.1"
               }
             }
           ]
@@ -898,6 +952,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: jinja2@2.10.1"
               }
             }
           ]
@@ -922,13 +979,43 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: py@1.8.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-42969",
+          "ruleIndex": 11,
+          "level": "error",
+          "message": {
+            "text": "Package: py\nInstalled Version: 1.8.0\nVulnerability CVE-2022-42969\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-42969](https://avd.aquasec.com/nvd/cve-2022-42969)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dir1/Pipfile.lock",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: py@1.8.0"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2021-20270",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "level": "error",
           "message": {
             "text": "Package: pygments\nInstalled Version: 2.3.1\nVulnerability CVE-2021-20270\nSeverity: HIGH\nFixed Version: 2.7.4\nLink: [CVE-2021-20270](https://avd.aquasec.com/nvd/cve-2021-20270)"
@@ -946,13 +1033,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pygments@2.3.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2021-27291",
-          "ruleIndex": 12,
+          "ruleIndex": 13,
           "level": "error",
           "message": {
             "text": "Package: pygments\nInstalled Version: 2.3.1\nVulnerability CVE-2021-27291\nSeverity: HIGH\nFixed Version: 2.7.4\nLink: [CVE-2021-27291](https://avd.aquasec.com/nvd/cve-2021-27291)"
@@ -970,13 +1060,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pygments@2.3.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2022-29217",
-          "ruleIndex": 13,
+          "ruleIndex": 14,
           "level": "error",
           "message": {
             "text": "Package: pyjwt\nInstalled Version: 1.7.1\nVulnerability CVE-2022-29217\nSeverity: HIGH\nFixed Version: 2.4.0\nLink: [CVE-2022-29217](https://avd.aquasec.com/nvd/cve-2022-29217)"
@@ -994,13 +1087,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pyjwt@1.7.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2019-20477",
-          "ruleIndex": 14,
+          "ruleIndex": 15,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2019-20477\nSeverity: CRITICAL\nFixed Version: 5.2b1\nLink: [CVE-2019-20477](https://avd.aquasec.com/nvd/cve-2019-20477)"
@@ -1018,13 +1114,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2020-14343",
-          "ruleIndex": 15,
+          "ruleIndex": 16,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2020-14343\nSeverity: CRITICAL\nFixed Version: 5.4\nLink: [CVE-2020-14343](https://avd.aquasec.com/nvd/cve-2020-14343)"
@@ -1042,13 +1141,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2020-1747",
-          "ruleIndex": 16,
+          "ruleIndex": 17,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2020-1747\nSeverity: CRITICAL\nFixed Version: 5.3.1\nLink: [CVE-2020-1747](https://avd.aquasec.com/nvd/cve-2020-1747)"
@@ -1066,13 +1168,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2021-32839",
-          "ruleIndex": 17,
+          "ruleIndex": 18,
           "level": "error",
           "message": {
             "text": "Package: sqlparse\nInstalled Version: 0.3.0\nVulnerability CVE-2021-32839\nSeverity: HIGH\nFixed Version: 0.4.2\nLink: [CVE-2021-32839](https://avd.aquasec.com/nvd/cve-2021-32839)"
@@ -1090,13 +1195,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: sqlparse@0.3.0"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2019-11324",
-          "ruleIndex": 18,
+          "ruleIndex": 19,
           "level": "error",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2019-11324\nSeverity: HIGH\nFixed Version: 1.24.2\nLink: [CVE-2019-11324](https://avd.aquasec.com/nvd/cve-2019-11324)"
@@ -1114,13 +1222,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2021-33503",
-          "ruleIndex": 19,
+          "ruleIndex": 20,
           "level": "error",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2021-33503\nSeverity: HIGH\nFixed Version: 1.26.5\nLink: [CVE-2021-33503](https://avd.aquasec.com/nvd/cve-2021-33503)"
@@ -1138,13 +1249,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2019-11236",
-          "ruleIndex": 20,
+          "ruleIndex": 21,
           "level": "warning",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2019-11236\nSeverity: MEDIUM\nFixed Version: 1.24.3\nLink: [CVE-2019-11236](https://avd.aquasec.com/nvd/cve-2019-11236)"
@@ -1162,13 +1276,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2020-26137",
-          "ruleIndex": 21,
+          "ruleIndex": 22,
           "level": "warning",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2020-26137\nSeverity: MEDIUM\nFixed Version: 1.25.9\nLink: [CVE-2020-26137](https://avd.aquasec.com/nvd/cve-2020-26137)"
@@ -1186,6 +1303,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir1/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
@@ -1210,6 +1330,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: babel@2.6.0"
               }
             }
           ]
@@ -1234,6 +1357,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: celery@4.3.0"
               }
             }
           ]
@@ -1258,6 +1384,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -1282,6 +1411,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -1306,6 +1438,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: django@2.0.9"
               }
             }
           ]
@@ -1330,6 +1465,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: djangorestframework@3.9.2"
               }
             }
           ]
@@ -1354,6 +1492,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: flower@0.9.3"
               }
             }
           ]
@@ -1378,6 +1519,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: httplib2@0.12.1"
               }
             }
           ]
@@ -1402,6 +1546,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: httplib2@0.12.1"
               }
             }
           ]
@@ -1426,6 +1573,9 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: jinja2@2.10.1"
               }
             }
           ]
@@ -1450,13 +1600,43 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: py@1.8.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-42969",
+          "ruleIndex": 11,
+          "level": "error",
+          "message": {
+            "text": "Package: py\nInstalled Version: 1.8.0\nVulnerability CVE-2022-42969\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-42969](https://avd.aquasec.com/nvd/cve-2022-42969)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dir2/Pipfile.lock",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: py@1.8.0"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2021-20270",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "level": "error",
           "message": {
             "text": "Package: pygments\nInstalled Version: 2.3.1\nVulnerability CVE-2021-20270\nSeverity: HIGH\nFixed Version: 2.7.4\nLink: [CVE-2021-20270](https://avd.aquasec.com/nvd/cve-2021-20270)"
@@ -1474,13 +1654,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pygments@2.3.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2021-27291",
-          "ruleIndex": 12,
+          "ruleIndex": 13,
           "level": "error",
           "message": {
             "text": "Package: pygments\nInstalled Version: 2.3.1\nVulnerability CVE-2021-27291\nSeverity: HIGH\nFixed Version: 2.7.4\nLink: [CVE-2021-27291](https://avd.aquasec.com/nvd/cve-2021-27291)"
@@ -1498,13 +1681,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pygments@2.3.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2022-29217",
-          "ruleIndex": 13,
+          "ruleIndex": 14,
           "level": "error",
           "message": {
             "text": "Package: pyjwt\nInstalled Version: 1.7.1\nVulnerability CVE-2022-29217\nSeverity: HIGH\nFixed Version: 2.4.0\nLink: [CVE-2022-29217](https://avd.aquasec.com/nvd/cve-2022-29217)"
@@ -1522,13 +1708,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pyjwt@1.7.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2019-20477",
-          "ruleIndex": 14,
+          "ruleIndex": 15,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2019-20477\nSeverity: CRITICAL\nFixed Version: 5.2b1\nLink: [CVE-2019-20477](https://avd.aquasec.com/nvd/cve-2019-20477)"
@@ -1546,13 +1735,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2020-14343",
-          "ruleIndex": 15,
+          "ruleIndex": 16,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2020-14343\nSeverity: CRITICAL\nFixed Version: 5.4\nLink: [CVE-2020-14343](https://avd.aquasec.com/nvd/cve-2020-14343)"
@@ -1570,13 +1762,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2020-1747",
-          "ruleIndex": 16,
+          "ruleIndex": 17,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2020-1747\nSeverity: CRITICAL\nFixed Version: 5.3.1\nLink: [CVE-2020-1747](https://avd.aquasec.com/nvd/cve-2020-1747)"
@@ -1594,13 +1789,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: pyyaml@5.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2021-32839",
-          "ruleIndex": 17,
+          "ruleIndex": 18,
           "level": "error",
           "message": {
             "text": "Package: sqlparse\nInstalled Version: 0.3.0\nVulnerability CVE-2021-32839\nSeverity: HIGH\nFixed Version: 0.4.2\nLink: [CVE-2021-32839](https://avd.aquasec.com/nvd/cve-2021-32839)"
@@ -1618,13 +1816,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: sqlparse@0.3.0"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2019-11324",
-          "ruleIndex": 18,
+          "ruleIndex": 19,
           "level": "error",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2019-11324\nSeverity: HIGH\nFixed Version: 1.24.2\nLink: [CVE-2019-11324](https://avd.aquasec.com/nvd/cve-2019-11324)"
@@ -1642,13 +1843,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2021-33503",
-          "ruleIndex": 19,
+          "ruleIndex": 20,
           "level": "error",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2021-33503\nSeverity: HIGH\nFixed Version: 1.26.5\nLink: [CVE-2021-33503](https://avd.aquasec.com/nvd/cve-2021-33503)"
@@ -1666,13 +1870,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2019-11236",
-          "ruleIndex": 20,
+          "ruleIndex": 21,
           "level": "warning",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2019-11236\nSeverity: MEDIUM\nFixed Version: 1.24.3\nLink: [CVE-2019-11236](https://avd.aquasec.com/nvd/cve-2019-11236)"
@@ -1690,13 +1897,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
         },
         {
           "ruleId": "CVE-2020-26137",
-          "ruleIndex": 21,
+          "ruleIndex": 22,
           "level": "warning",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2020-26137\nSeverity: MEDIUM\nFixed Version: 1.25.9\nLink: [CVE-2020-26137](https://avd.aquasec.com/nvd/cve-2020-26137)"
@@ -1714,13 +1924,16 @@
                   "endLine": 1,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "dir2/Pipfile.lock: urllib3@1.24.1"
               }
             }
           ]
         },
         {
           "ruleId": "aws-access-key-id",
-          "ruleIndex": 22,
+          "ruleIndex": 23,
           "level": "error",
           "message": {
             "text": "Artifact: secrets/deploy.sh\nType: \nSecret AWS Access Key ID\nSeverity: CRITICAL\nMatch: export AWS_ACCESS_KEY_ID=********************"
@@ -1738,13 +1951,16 @@
                   "endLine": 3,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "secrets/deploy.sh"
               }
             }
           ]
         },
         {
           "ruleId": "github-pat",
-          "ruleIndex": 23,
+          "ruleIndex": 24,
           "level": "error",
           "message": {
             "text": "Artifact: secrets/deploy.sh\nType: \nSecret GitHub Personal Access Token\nSeverity: CRITICAL\nMatch: export GITHUB_PAT=****************************************"
@@ -1762,6 +1978,9 @@
                   "endLine": 5,
                   "endColumn": 1
                 }
+              },
+              "message": {
+                "text": "secrets/deploy.sh"
               }
             }
           ]
