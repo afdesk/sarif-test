@@ -631,6 +631,87 @@
               }
             },
             {
+              "id": "CVE-2019-11358",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "jquery: Prototype pollution in object\u0026#39;s prototype leading to denial of service, remote code execution, or property injection"
+              },
+              "fullDescription": {
+                "text": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2019-11358",
+              "help": {
+                "text": "Vulnerability CVE-2019-11358\nSeverity: MEDIUM\nPackage: jquery\nFixed Version: \u003e=3.4.0\nLink: [CVE-2019-11358](https://avd.aquasec.com/nvd/cve-2019-11358)\njQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype.",
+                "markdown": "**Vulnerability CVE-2019-11358**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jquery|\u003e=3.4.0|[CVE-2019-11358](https://avd.aquasec.com/nvd/cve-2019-11358)|\n\njQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-11022",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "jquery: Cross-site scripting due to improper injQuery.htmlPrefilter method"
+              },
+              "fullDescription": {
+                "text": "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery\u0026#39;s DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2020-11022",
+              "help": {
+                "text": "Vulnerability CVE-2020-11022\nSeverity: MEDIUM\nPackage: jquery\nFixed Version: 3.5.0\nLink: [CVE-2020-11022](https://avd.aquasec.com/nvd/cve-2020-11022)\nIn jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                "markdown": "**Vulnerability CVE-2020-11022**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jquery|3.5.0|[CVE-2020-11022](https://avd.aquasec.com/nvd/cve-2020-11022)|\n\nIn jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.9",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-11023",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "jquery: Untrusted code execution via \u0026lt;option\u0026gt; tag in HTML passed to DOM manipulation methods"
+              },
+              "fullDescription": {
+                "text": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing \u0026lt;option\u0026gt; elements from untrusted sources - even after sanitizing it - to one of jQuery\u0026#39;s DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2020-11023",
+              "help": {
+                "text": "Vulnerability CVE-2020-11023\nSeverity: MEDIUM\nPackage: jquery\nFixed Version: 3.5.0\nLink: [CVE-2020-11023](https://avd.aquasec.com/nvd/cve-2020-11023)\nIn jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing \u003coption\u003e elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                "markdown": "**Vulnerability CVE-2020-11023**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jquery|3.5.0|[CVE-2020-11023](https://avd.aquasec.com/nvd/cve-2020-11023)|\n\nIn jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing \u003coption\u003e elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.9",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
               "id": "aws-access-key-id",
               "name": "Secret",
               "shortDescription": {
@@ -1932,8 +2013,89 @@
           ]
         },
         {
-          "ruleId": "aws-access-key-id",
+          "ruleId": "CVE-2019-11358",
           "ruleIndex": 23,
+          "level": "warning",
+          "message": {
+            "text": "Package: jquery\nInstalled Version: 3.2.1\nVulnerability CVE-2019-11358\nSeverity: MEDIUM\nFixed Version: \u003e=3.4.0\nLink: [CVE-2019-11358](https://avd.aquasec.com/nvd/cve-2019-11358)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "yarn/yarn.lock",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "yarn/yarn.lock: jquery@3.2.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-11022",
+          "ruleIndex": 24,
+          "level": "warning",
+          "message": {
+            "text": "Package: jquery\nInstalled Version: 3.2.1\nVulnerability CVE-2020-11022\nSeverity: MEDIUM\nFixed Version: 3.5.0\nLink: [CVE-2020-11022](https://avd.aquasec.com/nvd/cve-2020-11022)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "yarn/yarn.lock",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "yarn/yarn.lock: jquery@3.2.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-11023",
+          "ruleIndex": 25,
+          "level": "warning",
+          "message": {
+            "text": "Package: jquery\nInstalled Version: 3.2.1\nVulnerability CVE-2020-11023\nSeverity: MEDIUM\nFixed Version: 3.5.0\nLink: [CVE-2020-11023](https://avd.aquasec.com/nvd/cve-2020-11023)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "yarn/yarn.lock",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "yarn/yarn.lock: jquery@3.2.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "aws-access-key-id",
+          "ruleIndex": 26,
           "level": "error",
           "message": {
             "text": "Artifact: secrets/deploy.sh\nType: \nSecret AWS Access Key ID\nSeverity: CRITICAL\nMatch: export AWS_ACCESS_KEY_ID=********************"
@@ -1960,7 +2122,7 @@
         },
         {
           "ruleId": "github-pat",
-          "ruleIndex": 24,
+          "ruleIndex": 27,
           "level": "error",
           "message": {
             "text": "Artifact: secrets/deploy.sh\nType: \nSecret GitHub Personal Access Token\nSeverity: CRITICAL\nMatch: export GITHUB_PAT=****************************************"
