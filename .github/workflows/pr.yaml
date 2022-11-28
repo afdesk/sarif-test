@@ -7,6 +7,7 @@ on:
     paths:
       - '**.lock'
       - 'package-lock.json'
+      - 'report-new.sarif'
 
 jobs:
 
