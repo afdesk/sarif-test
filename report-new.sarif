@@ -10,6 +10,114 @@
           "name": "Trivy",
           "rules": [
             {
+              "id": "CVE-2017-16137",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "nodejs-debug: Regular expression Denial of Service"
+              },
+              "fullDescription": {
+                "text": "The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2017-16137",
+              "help": {
+                "text": "Vulnerability CVE-2017-16137\nSeverity: LOW\nPackage: debug\nFixed Version: 3.1.0, 2.6.9\nLink: [CVE-2017-16137](https://avd.aquasec.com/nvd/cve-2017-16137)\nThe debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue.",
+                "markdown": "**Vulnerability CVE-2017-16137**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|debug|3.1.0, 2.6.9|[CVE-2017-16137](https://avd.aquasec.com/nvd/cve-2017-16137)|\n\nThe debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-11358",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "jquery: Prototype pollution in object\u0026#39;s prototype leading to denial of service, remote code execution, or property injection"
+              },
+              "fullDescription": {
+                "text": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2019-11358",
+              "help": {
+                "text": "Vulnerability CVE-2019-11358\nSeverity: MEDIUM\nPackage: jquery\nFixed Version: \u003e=3.4.0\nLink: [CVE-2019-11358](https://avd.aquasec.com/nvd/cve-2019-11358)\njQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype.",
+                "markdown": "**Vulnerability CVE-2019-11358**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jquery|\u003e=3.4.0|[CVE-2019-11358](https://avd.aquasec.com/nvd/cve-2019-11358)|\n\njQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-11022",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "jquery: Cross-site scripting due to improper injQuery.htmlPrefilter method"
+              },
+              "fullDescription": {
+                "text": "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery\u0026#39;s DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2020-11022",
+              "help": {
+                "text": "Vulnerability CVE-2020-11022\nSeverity: MEDIUM\nPackage: jquery\nFixed Version: 3.5.0\nLink: [CVE-2020-11022](https://avd.aquasec.com/nvd/cve-2020-11022)\nIn jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                "markdown": "**Vulnerability CVE-2020-11022**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jquery|3.5.0|[CVE-2020-11022](https://avd.aquasec.com/nvd/cve-2020-11022)|\n\nIn jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.9",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-11023",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "jquery: Untrusted code execution via \u0026lt;option\u0026gt; tag in HTML passed to DOM manipulation methods"
+              },
+              "fullDescription": {
+                "text": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing \u0026lt;option\u0026gt; elements from untrusted sources - even after sanitizing it - to one of jQuery\u0026#39;s DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2020-11023",
+              "help": {
+                "text": "Vulnerability CVE-2020-11023\nSeverity: MEDIUM\nPackage: jquery\nFixed Version: 3.5.0\nLink: [CVE-2020-11023](https://avd.aquasec.com/nvd/cve-2020-11023)\nIn jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing \u003coption\u003e elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                "markdown": "**Vulnerability CVE-2020-11023**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jquery|3.5.0|[CVE-2020-11023](https://avd.aquasec.com/nvd/cve-2020-11023)|\n\nIn jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing \u003coption\u003e elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.9",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
               "id": "CVE-2021-42771",
               "name": "LanguageSpecificPackageVulnerability",
               "shortDescription": {
@@ -631,114 +739,6 @@
               }
             },
             {
-              "id": "CVE-2017-16137",
-              "name": "LanguageSpecificPackageVulnerability",
-              "shortDescription": {
-                "text": "nodejs-debug: Regular expression Denial of Service"
-              },
-              "fullDescription": {
-                "text": "The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue."
-              },
-              "defaultConfiguration": {
-                "level": "note"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2017-16137",
-              "help": {
-                "text": "Vulnerability CVE-2017-16137\nSeverity: LOW\nPackage: debug\nFixed Version: 3.1.0, 2.6.9\nLink: [CVE-2017-16137](https://avd.aquasec.com/nvd/cve-2017-16137)\nThe debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue.",
-                "markdown": "**Vulnerability CVE-2017-16137**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|debug|3.1.0, 2.6.9|[CVE-2017-16137](https://avd.aquasec.com/nvd/cve-2017-16137)|\n\nThe debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "2.0",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "LOW"
-                ]
-              }
-            },
-            {
-              "id": "CVE-2019-11358",
-              "name": "LanguageSpecificPackageVulnerability",
-              "shortDescription": {
-                "text": "jquery: Prototype pollution in object\u0026#39;s prototype leading to denial of service, remote code execution, or property injection"
-              },
-              "fullDescription": {
-                "text": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
-              },
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2019-11358",
-              "help": {
-                "text": "Vulnerability CVE-2019-11358\nSeverity: MEDIUM\nPackage: jquery\nFixed Version: \u003e=3.4.0\nLink: [CVE-2019-11358](https://avd.aquasec.com/nvd/cve-2019-11358)\njQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype.",
-                "markdown": "**Vulnerability CVE-2019-11358**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jquery|\u003e=3.4.0|[CVE-2019-11358](https://avd.aquasec.com/nvd/cve-2019-11358)|\n\njQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "5.5",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "MEDIUM"
-                ]
-              }
-            },
-            {
-              "id": "CVE-2020-11022",
-              "name": "LanguageSpecificPackageVulnerability",
-              "shortDescription": {
-                "text": "jquery: Cross-site scripting due to improper injQuery.htmlPrefilter method"
-              },
-              "fullDescription": {
-                "text": "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery\u0026#39;s DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
-              },
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2020-11022",
-              "help": {
-                "text": "Vulnerability CVE-2020-11022\nSeverity: MEDIUM\nPackage: jquery\nFixed Version: 3.5.0\nLink: [CVE-2020-11022](https://avd.aquasec.com/nvd/cve-2020-11022)\nIn jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
-                "markdown": "**Vulnerability CVE-2020-11022**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jquery|3.5.0|[CVE-2020-11022](https://avd.aquasec.com/nvd/cve-2020-11022)|\n\nIn jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "6.9",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "MEDIUM"
-                ]
-              }
-            },
-            {
-              "id": "CVE-2020-11023",
-              "name": "LanguageSpecificPackageVulnerability",
-              "shortDescription": {
-                "text": "jquery: Untrusted code execution via \u0026lt;option\u0026gt; tag in HTML passed to DOM manipulation methods"
-              },
-              "fullDescription": {
-                "text": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing \u0026lt;option\u0026gt; elements from untrusted sources - even after sanitizing it - to one of jQuery\u0026#39;s DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
-              },
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "helpUri": "https://avd.aquasec.com/nvd/cve-2020-11023",
-              "help": {
-                "text": "Vulnerability CVE-2020-11023\nSeverity: MEDIUM\nPackage: jquery\nFixed Version: 3.5.0\nLink: [CVE-2020-11023](https://avd.aquasec.com/nvd/cve-2020-11023)\nIn jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing \u003coption\u003e elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
-                "markdown": "**Vulnerability CVE-2020-11023**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|jquery|3.5.0|[CVE-2020-11023](https://avd.aquasec.com/nvd/cve-2020-11023)|\n\nIn jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing \u003coption\u003e elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "6.9",
-                "tags": [
-                  "vulnerability",
-                  "security",
-                  "MEDIUM"
-                ]
-              }
-            },
-            {
               "id": "aws-access-key-id",
               "name": "Secret",
               "shortDescription": {
@@ -793,13 +793,138 @@
               }
             }
           ],
-          "version": "0.35.0-current"
+          "version": "dev"
         }
       },
       "results": [
         {
-          "ruleId": "CVE-2021-42771",
+          "ruleId": "CVE-2017-16137",
           "ruleIndex": 0,
+          "level": "note",
+          "message": {
+            "text": "Package: debug\nInstalled Version: 2.6.8\nVulnerability CVE-2017-16137\nSeverity: LOW\nFixed Version: 3.1.0, 2.6.9\nLink: [CVE-2017-16137](https://avd.aquasec.com/nvd/cve-2017-16137)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "npm/package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 1,
+                  "endLine": 32,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "npm/package-lock.json: debug@2.6.8"
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "npm/package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 1,
+                  "endLine": 55,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "npm/package-lock.json: debug@2.6.8"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-11358",
+          "ruleIndex": 1,
+          "level": "warning",
+          "message": {
+            "text": "Package: jquery\nInstalled Version: 3.2.1\nVulnerability CVE-2019-11358\nSeverity: MEDIUM\nFixed Version: \u003e=3.4.0\nLink: [CVE-2019-11358](https://avd.aquasec.com/nvd/cve-2019-11358)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "yarn/yarn.lock",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "yarn/yarn.lock: jquery@3.2.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-11022",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "Package: jquery\nInstalled Version: 3.2.1\nVulnerability CVE-2020-11022\nSeverity: MEDIUM\nFixed Version: 3.5.0\nLink: [CVE-2020-11022](https://avd.aquasec.com/nvd/cve-2020-11022)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "yarn/yarn.lock",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "yarn/yarn.lock: jquery@3.2.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-11023",
+          "ruleIndex": 3,
+          "level": "warning",
+          "message": {
+            "text": "Package: jquery\nInstalled Version: 3.2.1\nVulnerability CVE-2020-11023\nSeverity: MEDIUM\nFixed Version: 3.5.0\nLink: [CVE-2020-11023](https://avd.aquasec.com/nvd/cve-2020-11023)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "yarn/yarn.lock",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "yarn/yarn.lock: jquery@3.2.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-42771",
+          "ruleIndex": 4,
           "level": "error",
           "message": {
             "text": "Package: babel\nInstalled Version: 2.6.0\nVulnerability CVE-2021-42771\nSeverity: HIGH\nFixed Version: 2.9.1\nLink: [CVE-2021-42771](https://avd.aquasec.com/nvd/cve-2021-42771)"
@@ -826,7 +951,7 @@
         },
         {
           "ruleId": "CVE-2021-23727",
-          "ruleIndex": 1,
+          "ruleIndex": 5,
           "level": "error",
           "message": {
             "text": "Package: celery\nInstalled Version: 4.3.0\nVulnerability CVE-2021-23727\nSeverity: HIGH\nFixed Version: 5.2.2\nLink: [CVE-2021-23727](https://avd.aquasec.com/nvd/cve-2021-23727)"
@@ -853,7 +978,7 @@
         },
         {
           "ruleId": "CVE-2019-6975",
-          "ruleIndex": 2,
+          "ruleIndex": 6,
           "level": "error",
           "message": {
             "text": "Package: django\nInstalled Version: 2.0.9\nVulnerability CVE-2019-6975\nSeverity: HIGH\nFixed Version: 1.11.19, 2.0.12, 2.1.7\nLink: [CVE-2019-6975](https://avd.aquasec.com/nvd/cve-2019-6975)"
@@ -880,7 +1005,7 @@
         },
         {
           "ruleId": "CVE-2019-3498",
-          "ruleIndex": 3,
+          "ruleIndex": 7,
           "level": "warning",
           "message": {
             "text": "Package: django\nInstalled Version: 2.0.9\nVulnerability CVE-2019-3498\nSeverity: MEDIUM\nFixed Version: 1.11.18, 2.0.10, 2.1.5\nLink: [CVE-2019-3498](https://avd.aquasec.com/nvd/cve-2019-3498)"
@@ -907,7 +1032,7 @@
         },
         {
           "ruleId": "CVE-2021-33203",
-          "ruleIndex": 4,
+          "ruleIndex": 8,
           "level": "warning",
           "message": {
             "text": "Package: django\nInstalled Version: 2.0.9\nVulnerability CVE-2021-33203\nSeverity: MEDIUM\nFixed Version: 2.2.24, 3.1.12, 3.2.4\nLink: [CVE-2021-33203](https://avd.aquasec.com/nvd/cve-2021-33203)"
@@ -934,7 +1059,7 @@
         },
         {
           "ruleId": "CVE-2020-25626",
-          "ruleIndex": 5,
+          "ruleIndex": 9,
           "level": "warning",
           "message": {
             "text": "Package: djangorestframework\nInstalled Version: 3.9.2\nVulnerability CVE-2020-25626\nSeverity: MEDIUM\nFixed Version: 3.11.2\nLink: [CVE-2020-25626](https://avd.aquasec.com/nvd/cve-2020-25626)"
@@ -961,7 +1086,7 @@
         },
         {
           "ruleId": "CVE-2022-30034",
-          "ruleIndex": 6,
+          "ruleIndex": 10,
           "level": "error",
           "message": {
             "text": "Package: flower\nInstalled Version: 0.9.3\nVulnerability CVE-2022-30034\nSeverity: HIGH\nFixed Version: 1.2.0\nLink: [CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)"
@@ -988,7 +1113,7 @@
         },
         {
           "ruleId": "CVE-2021-21240",
-          "ruleIndex": 7,
+          "ruleIndex": 11,
           "level": "error",
           "message": {
             "text": "Package: httplib2\nInstalled Version: 0.12.1\nVulnerability CVE-2021-21240\nSeverity: HIGH\nFixed Version: 0.19.0\nLink: [CVE-2021-21240](https://avd.aquasec.com/nvd/cve-2021-21240)"
@@ -1015,7 +1140,7 @@
         },
         {
           "ruleId": "CVE-2020-11078",
-          "ruleIndex": 8,
+          "ruleIndex": 12,
           "level": "warning",
           "message": {
             "text": "Package: httplib2\nInstalled Version: 0.12.1\nVulnerability CVE-2020-11078\nSeverity: MEDIUM\nFixed Version: 0.18.0\nLink: [CVE-2020-11078](https://avd.aquasec.com/nvd/cve-2020-11078)"
@@ -1042,7 +1167,7 @@
         },
         {
           "ruleId": "CVE-2020-28493",
-          "ruleIndex": 9,
+          "ruleIndex": 13,
           "level": "warning",
           "message": {
             "text": "Package: jinja2\nInstalled Version: 2.10.1\nVulnerability CVE-2020-28493\nSeverity: MEDIUM\nFixed Version: 2.11.3\nLink: [CVE-2020-28493](https://avd.aquasec.com/nvd/cve-2020-28493)"
@@ -1069,7 +1194,7 @@
         },
         {
           "ruleId": "CVE-2020-29651",
-          "ruleIndex": 10,
+          "ruleIndex": 14,
           "level": "error",
           "message": {
             "text": "Package: py\nInstalled Version: 1.8.0\nVulnerability CVE-2020-29651\nSeverity: HIGH\nFixed Version: 1.10.0\nLink: [CVE-2020-29651](https://avd.aquasec.com/nvd/cve-2020-29651)"
@@ -1096,7 +1221,7 @@
         },
         {
           "ruleId": "CVE-2022-42969",
-          "ruleIndex": 11,
+          "ruleIndex": 15,
           "level": "error",
           "message": {
             "text": "Package: py\nInstalled Version: 1.8.0\nVulnerability CVE-2022-42969\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-42969](https://avd.aquasec.com/nvd/cve-2022-42969)"
@@ -1123,7 +1248,7 @@
         },
         {
           "ruleId": "CVE-2021-20270",
-          "ruleIndex": 12,
+          "ruleIndex": 16,
           "level": "error",
           "message": {
             "text": "Package: pygments\nInstalled Version: 2.3.1\nVulnerability CVE-2021-20270\nSeverity: HIGH\nFixed Version: 2.7.4\nLink: [CVE-2021-20270](https://avd.aquasec.com/nvd/cve-2021-20270)"
@@ -1150,7 +1275,7 @@
         },
         {
           "ruleId": "CVE-2021-27291",
-          "ruleIndex": 13,
+          "ruleIndex": 17,
           "level": "error",
           "message": {
             "text": "Package: pygments\nInstalled Version: 2.3.1\nVulnerability CVE-2021-27291\nSeverity: HIGH\nFixed Version: 2.7.4\nLink: [CVE-2021-27291](https://avd.aquasec.com/nvd/cve-2021-27291)"
@@ -1177,7 +1302,7 @@
         },
         {
           "ruleId": "CVE-2022-29217",
-          "ruleIndex": 14,
+          "ruleIndex": 18,
           "level": "error",
           "message": {
             "text": "Package: pyjwt\nInstalled Version: 1.7.1\nVulnerability CVE-2022-29217\nSeverity: HIGH\nFixed Version: 2.4.0\nLink: [CVE-2022-29217](https://avd.aquasec.com/nvd/cve-2022-29217)"
@@ -1204,7 +1329,7 @@
         },
         {
           "ruleId": "CVE-2019-20477",
-          "ruleIndex": 15,
+          "ruleIndex": 19,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2019-20477\nSeverity: CRITICAL\nFixed Version: 5.2b1\nLink: [CVE-2019-20477](https://avd.aquasec.com/nvd/cve-2019-20477)"
@@ -1231,7 +1356,7 @@
         },
         {
           "ruleId": "CVE-2020-14343",
-          "ruleIndex": 16,
+          "ruleIndex": 20,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2020-14343\nSeverity: CRITICAL\nFixed Version: 5.4\nLink: [CVE-2020-14343](https://avd.aquasec.com/nvd/cve-2020-14343)"
@@ -1258,7 +1383,7 @@
         },
         {
           "ruleId": "CVE-2020-1747",
-          "ruleIndex": 17,
+          "ruleIndex": 21,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2020-1747\nSeverity: CRITICAL\nFixed Version: 5.3.1\nLink: [CVE-2020-1747](https://avd.aquasec.com/nvd/cve-2020-1747)"
@@ -1285,7 +1410,7 @@
         },
         {
           "ruleId": "CVE-2021-32839",
-          "ruleIndex": 18,
+          "ruleIndex": 22,
           "level": "error",
           "message": {
             "text": "Package: sqlparse\nInstalled Version: 0.3.0\nVulnerability CVE-2021-32839\nSeverity: HIGH\nFixed Version: 0.4.2\nLink: [CVE-2021-32839](https://avd.aquasec.com/nvd/cve-2021-32839)"
@@ -1312,7 +1437,7 @@
         },
         {
           "ruleId": "CVE-2019-11324",
-          "ruleIndex": 19,
+          "ruleIndex": 23,
           "level": "error",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2019-11324\nSeverity: HIGH\nFixed Version: 1.24.2\nLink: [CVE-2019-11324](https://avd.aquasec.com/nvd/cve-2019-11324)"
@@ -1339,7 +1464,7 @@
         },
         {
           "ruleId": "CVE-2021-33503",
-          "ruleIndex": 20,
+          "ruleIndex": 24,
           "level": "error",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2021-33503\nSeverity: HIGH\nFixed Version: 1.26.5\nLink: [CVE-2021-33503](https://avd.aquasec.com/nvd/cve-2021-33503)"
@@ -1366,7 +1491,7 @@
         },
         {
           "ruleId": "CVE-2019-11236",
-          "ruleIndex": 21,
+          "ruleIndex": 25,
           "level": "warning",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2019-11236\nSeverity: MEDIUM\nFixed Version: 1.24.3\nLink: [CVE-2019-11236](https://avd.aquasec.com/nvd/cve-2019-11236)"
@@ -1393,7 +1518,7 @@
         },
         {
           "ruleId": "CVE-2020-26137",
-          "ruleIndex": 22,
+          "ruleIndex": 26,
           "level": "warning",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2020-26137\nSeverity: MEDIUM\nFixed Version: 1.25.9\nLink: [CVE-2020-26137](https://avd.aquasec.com/nvd/cve-2020-26137)"
@@ -1420,7 +1545,7 @@
         },
         {
           "ruleId": "CVE-2021-42771",
-          "ruleIndex": 0,
+          "ruleIndex": 4,
           "level": "error",
           "message": {
             "text": "Package: babel\nInstalled Version: 2.6.0\nVulnerability CVE-2021-42771\nSeverity: HIGH\nFixed Version: 2.9.1\nLink: [CVE-2021-42771](https://avd.aquasec.com/nvd/cve-2021-42771)"
@@ -1447,7 +1572,7 @@
         },
         {
           "ruleId": "CVE-2021-23727",
-          "ruleIndex": 1,
+          "ruleIndex": 5,
           "level": "error",
           "message": {
             "text": "Package: celery\nInstalled Version: 4.3.0\nVulnerability CVE-2021-23727\nSeverity: HIGH\nFixed Version: 5.2.2\nLink: [CVE-2021-23727](https://avd.aquasec.com/nvd/cve-2021-23727)"
@@ -1474,7 +1599,7 @@
         },
         {
           "ruleId": "CVE-2019-6975",
-          "ruleIndex": 2,
+          "ruleIndex": 6,
           "level": "error",
           "message": {
             "text": "Package: django\nInstalled Version: 2.0.9\nVulnerability CVE-2019-6975\nSeverity: HIGH\nFixed Version: 1.11.19, 2.0.12, 2.1.7\nLink: [CVE-2019-6975](https://avd.aquasec.com/nvd/cve-2019-6975)"
@@ -1501,7 +1626,7 @@
         },
         {
           "ruleId": "CVE-2019-3498",
-          "ruleIndex": 3,
+          "ruleIndex": 7,
           "level": "warning",
           "message": {
             "text": "Package: django\nInstalled Version: 2.0.9\nVulnerability CVE-2019-3498\nSeverity: MEDIUM\nFixed Version: 1.11.18, 2.0.10, 2.1.5\nLink: [CVE-2019-3498](https://avd.aquasec.com/nvd/cve-2019-3498)"
@@ -1528,7 +1653,7 @@
         },
         {
           "ruleId": "CVE-2021-33203",
-          "ruleIndex": 4,
+          "ruleIndex": 8,
           "level": "warning",
           "message": {
             "text": "Package: django\nInstalled Version: 2.0.9\nVulnerability CVE-2021-33203\nSeverity: MEDIUM\nFixed Version: 2.2.24, 3.1.12, 3.2.4\nLink: [CVE-2021-33203](https://avd.aquasec.com/nvd/cve-2021-33203)"
@@ -1555,7 +1680,7 @@
         },
         {
           "ruleId": "CVE-2020-25626",
-          "ruleIndex": 5,
+          "ruleIndex": 9,
           "level": "warning",
           "message": {
             "text": "Package: djangorestframework\nInstalled Version: 3.9.2\nVulnerability CVE-2020-25626\nSeverity: MEDIUM\nFixed Version: 3.11.2\nLink: [CVE-2020-25626](https://avd.aquasec.com/nvd/cve-2020-25626)"
@@ -1582,7 +1707,7 @@
         },
         {
           "ruleId": "CVE-2022-30034",
-          "ruleIndex": 6,
+          "ruleIndex": 10,
           "level": "error",
           "message": {
             "text": "Package: flower\nInstalled Version: 0.9.3\nVulnerability CVE-2022-30034\nSeverity: HIGH\nFixed Version: 1.2.0\nLink: [CVE-2022-30034](https://avd.aquasec.com/nvd/cve-2022-30034)"
@@ -1609,7 +1734,7 @@
         },
         {
           "ruleId": "CVE-2021-21240",
-          "ruleIndex": 7,
+          "ruleIndex": 11,
           "level": "error",
           "message": {
             "text": "Package: httplib2\nInstalled Version: 0.12.1\nVulnerability CVE-2021-21240\nSeverity: HIGH\nFixed Version: 0.19.0\nLink: [CVE-2021-21240](https://avd.aquasec.com/nvd/cve-2021-21240)"
@@ -1636,7 +1761,7 @@
         },
         {
           "ruleId": "CVE-2020-11078",
-          "ruleIndex": 8,
+          "ruleIndex": 12,
           "level": "warning",
           "message": {
             "text": "Package: httplib2\nInstalled Version: 0.12.1\nVulnerability CVE-2020-11078\nSeverity: MEDIUM\nFixed Version: 0.18.0\nLink: [CVE-2020-11078](https://avd.aquasec.com/nvd/cve-2020-11078)"
@@ -1663,7 +1788,7 @@
         },
         {
           "ruleId": "CVE-2020-28493",
-          "ruleIndex": 9,
+          "ruleIndex": 13,
           "level": "warning",
           "message": {
             "text": "Package: jinja2\nInstalled Version: 2.10.1\nVulnerability CVE-2020-28493\nSeverity: MEDIUM\nFixed Version: 2.11.3\nLink: [CVE-2020-28493](https://avd.aquasec.com/nvd/cve-2020-28493)"
@@ -1690,7 +1815,7 @@
         },
         {
           "ruleId": "CVE-2020-29651",
-          "ruleIndex": 10,
+          "ruleIndex": 14,
           "level": "error",
           "message": {
             "text": "Package: py\nInstalled Version: 1.8.0\nVulnerability CVE-2020-29651\nSeverity: HIGH\nFixed Version: 1.10.0\nLink: [CVE-2020-29651](https://avd.aquasec.com/nvd/cve-2020-29651)"
@@ -1717,7 +1842,7 @@
         },
         {
           "ruleId": "CVE-2022-42969",
-          "ruleIndex": 11,
+          "ruleIndex": 15,
           "level": "error",
           "message": {
             "text": "Package: py\nInstalled Version: 1.8.0\nVulnerability CVE-2022-42969\nSeverity: HIGH\nFixed Version: \nLink: [CVE-2022-42969](https://avd.aquasec.com/nvd/cve-2022-42969)"
@@ -1744,7 +1869,7 @@
         },
         {
           "ruleId": "CVE-2021-20270",
-          "ruleIndex": 12,
+          "ruleIndex": 16,
           "level": "error",
           "message": {
             "text": "Package: pygments\nInstalled Version: 2.3.1\nVulnerability CVE-2021-20270\nSeverity: HIGH\nFixed Version: 2.7.4\nLink: [CVE-2021-20270](https://avd.aquasec.com/nvd/cve-2021-20270)"
@@ -1771,7 +1896,7 @@
         },
         {
           "ruleId": "CVE-2021-27291",
-          "ruleIndex": 13,
+          "ruleIndex": 17,
           "level": "error",
           "message": {
             "text": "Package: pygments\nInstalled Version: 2.3.1\nVulnerability CVE-2021-27291\nSeverity: HIGH\nFixed Version: 2.7.4\nLink: [CVE-2021-27291](https://avd.aquasec.com/nvd/cve-2021-27291)"
@@ -1798,7 +1923,7 @@
         },
         {
           "ruleId": "CVE-2022-29217",
-          "ruleIndex": 14,
+          "ruleIndex": 18,
           "level": "error",
           "message": {
             "text": "Package: pyjwt\nInstalled Version: 1.7.1\nVulnerability CVE-2022-29217\nSeverity: HIGH\nFixed Version: 2.4.0\nLink: [CVE-2022-29217](https://avd.aquasec.com/nvd/cve-2022-29217)"
@@ -1825,7 +1950,7 @@
         },
         {
           "ruleId": "CVE-2019-20477",
-          "ruleIndex": 15,
+          "ruleIndex": 19,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2019-20477\nSeverity: CRITICAL\nFixed Version: 5.2b1\nLink: [CVE-2019-20477](https://avd.aquasec.com/nvd/cve-2019-20477)"
@@ -1852,7 +1977,7 @@
         },
         {
           "ruleId": "CVE-2020-14343",
-          "ruleIndex": 16,
+          "ruleIndex": 20,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2020-14343\nSeverity: CRITICAL\nFixed Version: 5.4\nLink: [CVE-2020-14343](https://avd.aquasec.com/nvd/cve-2020-14343)"
@@ -1879,7 +2004,7 @@
         },
         {
           "ruleId": "CVE-2020-1747",
-          "ruleIndex": 17,
+          "ruleIndex": 21,
           "level": "error",
           "message": {
             "text": "Package: pyyaml\nInstalled Version: 5.1\nVulnerability CVE-2020-1747\nSeverity: CRITICAL\nFixed Version: 5.3.1\nLink: [CVE-2020-1747](https://avd.aquasec.com/nvd/cve-2020-1747)"
@@ -1906,7 +2031,7 @@
         },
         {
           "ruleId": "CVE-2021-32839",
-          "ruleIndex": 18,
+          "ruleIndex": 22,
           "level": "error",
           "message": {
             "text": "Package: sqlparse\nInstalled Version: 0.3.0\nVulnerability CVE-2021-32839\nSeverity: HIGH\nFixed Version: 0.4.2\nLink: [CVE-2021-32839](https://avd.aquasec.com/nvd/cve-2021-32839)"
@@ -1933,7 +2058,7 @@
         },
         {
           "ruleId": "CVE-2019-11324",
-          "ruleIndex": 19,
+          "ruleIndex": 23,
           "level": "error",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2019-11324\nSeverity: HIGH\nFixed Version: 1.24.2\nLink: [CVE-2019-11324](https://avd.aquasec.com/nvd/cve-2019-11324)"
@@ -1960,7 +2085,7 @@
         },
         {
           "ruleId": "CVE-2021-33503",
-          "ruleIndex": 20,
+          "ruleIndex": 24,
           "level": "error",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2021-33503\nSeverity: HIGH\nFixed Version: 1.26.5\nLink: [CVE-2021-33503](https://avd.aquasec.com/nvd/cve-2021-33503)"
@@ -1987,7 +2112,7 @@
         },
         {
           "ruleId": "CVE-2019-11236",
-          "ruleIndex": 21,
+          "ruleIndex": 25,
           "level": "warning",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2019-11236\nSeverity: MEDIUM\nFixed Version: 1.24.3\nLink: [CVE-2019-11236](https://avd.aquasec.com/nvd/cve-2019-11236)"
@@ -2014,7 +2139,7 @@
         },
         {
           "ruleId": "CVE-2020-26137",
-          "ruleIndex": 22,
+          "ruleIndex": 26,
           "level": "warning",
           "message": {
             "text": "Package: urllib3\nInstalled Version: 1.24.1\nVulnerability CVE-2020-26137\nSeverity: MEDIUM\nFixed Version: 1.25.9\nLink: [CVE-2020-26137](https://avd.aquasec.com/nvd/cve-2020-26137)"
@@ -2035,114 +2160,6 @@
               },
               "message": {
                 "text": "dir2/Pipfile.lock: urllib3@1.24.1"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2017-16137",
-          "ruleIndex": 23,
-          "level": "note",
-          "message": {
-            "text": "Package: debug\nInstalled Version: 2.6.8\nVulnerability CVE-2017-16137\nSeverity: LOW\nFixed Version: 3.1.0, 2.6.9\nLink: [CVE-2017-16137](https://avd.aquasec.com/nvd/cve-2017-16137)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "npm/package-lock.json",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "npm/package-lock.json: debug@2.6.8"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2019-11358",
-          "ruleIndex": 24,
-          "level": "warning",
-          "message": {
-            "text": "Package: jquery\nInstalled Version: 3.2.1\nVulnerability CVE-2019-11358\nSeverity: MEDIUM\nFixed Version: \u003e=3.4.0\nLink: [CVE-2019-11358](https://avd.aquasec.com/nvd/cve-2019-11358)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "yarn/yarn.lock",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "yarn/yarn.lock: jquery@3.2.1"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2020-11022",
-          "ruleIndex": 25,
-          "level": "warning",
-          "message": {
-            "text": "Package: jquery\nInstalled Version: 3.2.1\nVulnerability CVE-2020-11022\nSeverity: MEDIUM\nFixed Version: 3.5.0\nLink: [CVE-2020-11022](https://avd.aquasec.com/nvd/cve-2020-11022)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "yarn/yarn.lock",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "yarn/yarn.lock: jquery@3.2.1"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "CVE-2020-11023",
-          "ruleIndex": 26,
-          "level": "warning",
-          "message": {
-            "text": "Package: jquery\nInstalled Version: 3.2.1\nVulnerability CVE-2020-11023\nSeverity: MEDIUM\nFixed Version: 3.5.0\nLink: [CVE-2020-11023](https://avd.aquasec.com/nvd/cve-2020-11023)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "yarn/yarn.lock",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "yarn/yarn.lock: jquery@3.2.1"
               }
             }
           ]
