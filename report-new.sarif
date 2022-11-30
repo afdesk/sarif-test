@@ -793,7 +793,7 @@
               }
             }
           ],
-          "version": "0.34.0-45-g255b5e51"
+          "version": "0.35.0"
         }
       },
       "results": [
@@ -2054,26 +2054,9 @@
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
-                  "startLine": 25,
+                  "startLine": 1,
                   "startColumn": 1,
-                  "endLine": 32,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "npm/package-lock.json: debug@2.6.8"
-              }
-            },
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "npm/package-lock.json",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 1,
-                  "endLine": 55,
+                  "endLine": 1,
                   "endColumn": 1
                 }
               },
@@ -2098,9 +2081,9 @@
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
-                  "startLine": 10,
+                  "startLine": 1,
                   "startColumn": 1,
-                  "endLine": 10,
+                  "endLine": 1,
                   "endColumn": 1
                 }
               },
@@ -2125,9 +2108,9 @@
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
-                  "startLine": 10,
+                  "startLine": 1,
                   "startColumn": 1,
-                  "endLine": 10,
+                  "endLine": 1,
                   "endColumn": 1
                 }
               },
@@ -2152,9 +2135,9 @@
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
-                  "startLine": 10,
+                  "startLine": 1,
                   "startColumn": 1,
-                  "endLine": 10,
+                  "endLine": 1,
                   "endColumn": 1
                 }
               },
